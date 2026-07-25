@@ -19,12 +19,14 @@ function Navbar() {
         
         {/* BRAND LOGO AREA */}
         <div className="navbar-brand">
-          <img
-            src={logo}
-            alt="GeoKnow Logo"
-            className="navbar-logo"
-            style={{ height: "45px", objectFit: 'contain' }}
-          />
+          <Link to="/" onClick={handleLinkClick}>
+            <img
+              src={logo}
+              alt="GeoKnow Logo"
+              className="navbar-logo"
+              style={{ height: "45px", objectFit: 'contain' }}
+            />
+          </Link>
         </div>
 
         {/* MOBILE MENU TOGGLE BUTTON */}
@@ -49,29 +51,37 @@ function Navbar() {
             Home
           </Link>
           <Link 
-            to="/about" 
+            to="/tani" 
             onClick={handleLinkClick} 
-            style={{ textDecoration: 'none', fontSize: '14px', color: location.pathname === '/about' ? '#2c3e50' : '#555', fontWeight: location.pathname === '/about' ? '600' : '400' }}
-          >
-            About
-          </Link>
-          <Link 
-            to="/geology" 
-            onClick={handleLinkClick} 
-            style={{ textDecoration: 'none', fontSize: '14px', color: location.pathname === '/geology' ? '#2c3e50' : '#555', fontWeight: location.pathname === '/geology' ? '600' : '400' }}
-          >
-            Geology
-          </Link>
-          <Link 
-            to="/fossils" 
-            onClick={handleLinkClick} 
-            style={{ textDecoration: 'none', fontSize: '14px', color: location.pathname === '/fossils' ? '#2c3e50' : '#555', fontWeight: location.pathname === '/fossils' ? '600' : '400' }}
+            style={{ textDecoration: 'none', fontSize: '14px', color: location.pathname === '/tani' ? '#2c3e50' : '#555', fontWeight: location.pathname === '/tani' ? '600' : '400' }}
           >
             Fossils
           </Link>
           <Link 
+            to="/jeoloji" 
+            onClick={handleLinkClick} 
+            style={{ textDecoration: 'none', fontSize: '14px', color: location.pathname === '/jeoloji' ? '#2c3e50' : '#555', fontWeight: location.pathname === '/jeoloji' ? '600' : '400' }}
+          >
+            Geology
+          </Link>
+          <Link 
+            to="/hakkinda" 
+            onClick={handleLinkClick} 
+            style={{ textDecoration: 'none', fontSize: '14px', color: location.pathname === '/hakkinda' ? '#2c3e50' : '#555', fontWeight: location.pathname === '/hakkinda' ? '600' : '400' }}
+          >
+            About
+          </Link>
+          <Link 
+            to="/iletisim" 
+            onClick={handleLinkClick} 
+            style={{ textDecoration: 'none', fontSize: '14px', color: location.pathname === '/iletisim' ? '#2c3e50' : '#555', fontWeight: location.pathname === '/iletisim' ? '600' : '400' }}
+          >
+            Contact
+          </Link>
+          <Link 
             to="/predict" 
             onClick={handleLinkClick} 
+            className="navbar-predict-btn"
             style={{ textDecoration: 'none', fontSize: '14px', color: location.pathname === '/predict' ? '#2c3e50' : '#555', fontWeight: location.pathname === '/predict' ? '600' : '400' }}
           >
             Predict

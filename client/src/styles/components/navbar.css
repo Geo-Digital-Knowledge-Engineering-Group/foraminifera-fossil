@@ -125,4 +125,18 @@
 
     padding: var(--spacing-small) 0;
   }
+  .navbar-predict-btn {
+  border: 2px solid #a8e063;
+  padding: 6px 16px;
+  border-radius: 6px;
+  color: #a8e063;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navbar-predict-btn:hover {
+  background-color: #a8e063;
+  color: #fff;
+}
 }
