@@ -1,26 +1,34 @@
-import "../styles/components/footer.css";
+import React from "react";
 import logo from "../assets/images/logo.png";
 
 function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <footer className="site-footer" style={{ borderTop: "1px solid var(--color-border)", backgroundColor: "var(--color-sap-bg)", color: "var(--color-text)", padding: "var(--spacing-medium)" }}>
-      <div className="footer-container" style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: "var(--spacing-medium)", maxWidth: "var(--page-max-width)", margin: "0 auto", fontSize: "12px", padding: 0 }}>
+    <footer className="site-footer" style={{ backgroundColor: '#dcdeda', borderTop: '1px solid #c8d0cc', padding: '15px 30px', marginTop: 'auto' }}>
+      <div className="footer-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', maxWidth: '1400px', margin: '0 auto' }}>
         
-        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-          <strong style={{ color: "var(--color-primary)" }}>Foraminifera Karar Destek Sistemi</strong>
+        {/* LEFT TITLE */}
+        <div className="footer-left">
+          <span style={{ fontSize: '13px', fontWeight: 'bold', color: '#4a514c' }}>
+            Foraminifera Karar Destek Sistemi
+          </span>
         </div>
-        
-        <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-          <img src={logo} alt="GeoKnow Logo" style={{ height: "24px" }} />
-          <a href="https://avesis.ogu.edu.tr/arastirma-grubu/geoknow" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-text)", textDecoration: "none", fontWeight: "bold" }}>
+
+        {/* RIGHT INFO (LOGO, GROUP & COPYRIGHT) */}
+        <div className="footer-right" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+          <img 
+            src={logo} 
+            alt="GeoKnow Logo" 
+            style={{ height: '30px', objectFit: 'contain' }} 
+          />
+          <span style={{ fontSize: '12px', fontWeight: 'bold', color: '#1a2c24' }}>
             GeoKnow Araştırma Grubu
-          </a>
-          <span style={{ color: "var(--color-border)" }}>|</span>
-          <span style={{ color: "var(--color-text-muted)" }}>© {currentYear} Tüm hakları saklıdır.</span>
+          </span>
+          <span style={{ color: '#888' }}>|</span>
+          <span style={{ fontSize: '12px', color: '#333' }}>
+            © 2026 Tüm hakları saklıdır.
+          </span>
         </div>
-        
+
       </div>
     </footer>
   );

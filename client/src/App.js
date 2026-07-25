@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import Predict from "./pages/Predict";
 import About from "./pages/About";
 import Geology from "./pages/Geology";
 import Fossils from "./pages/Fossils";
@@ -17,6 +17,7 @@ function App() {
 
         <div style={{ flex: 1, paddingBottom: "20px" }}>
           <Routes>
+            <Route path="/predict" element={<Predict />} />
             <Route path="/" element={<Navigate to="/tani" replace />} />
             <Route path="/tani" element={<Fossils />} />
             <Route path="/hakkinda" element={<About />} />

@@ -1,5 +1,5 @@
 :root {
-  --color-background: #FFFFCC; /* Classic SAP ALV Yellow */
+  --color-background: #e0e0d7; /* Classic SAP ALV Yellow */
   --color-surface: #ffffff;
   
   --color-text: #000000;
@@ -7,7 +7,7 @@
   
   --color-border: #808080;
   
-  --color-primary: #008000; /* Classic green */
+  --color-primary: #717771; /* Classic green */
   --color-sap-bg: #d4d0c8; /* Windows 95/SAP classic gray */
 
   --page-max-width: 1000px;
