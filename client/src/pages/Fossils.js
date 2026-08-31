@@ -53,12 +53,20 @@ function ModeSelector({ onSelect }) {
   return (
     <div className="mode-selector">
       <button className="mode-card" onClick={() => onSelect("wizard")}>
-        <span className="mode-icon">🌿</span>
+        <img
+          src="/asset/johnny-automatic-ceratite.svg"
+          alt="Adım adım tanı"
+          className="mode-icon-svg"
+        />
         <strong>Adım Adım Tanı</strong>
         <span>Karar ağacı üzerinden yönlendirilmiş soru-cevap</span>
       </button>
       <button className="mode-card" onClick={() => onSelect("scoring")}>
-        <span className="mode-icon">⚖️</span>
+        <img
+          src="/asset/foraminifera.svg"
+          alt="Karakter puanlama"
+          className="mode-icon-svg"
+        />
         <strong>Karakter Puanlama</strong>
         <span>Gözlemlediğiniz CHR karakterlerini girin, motor puanlasın</span>
       </button>
