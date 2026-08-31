@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import "../styles/pages/fossils.css";
+import ceratiteIcon from "../assets/johnny-automatic-ceratite.svg";
+import foraminiferaIcon from "../assets/foraminifera.svg";
 
 const API = process.env.REACT_APP_API_URL + "/api/diagnose";
 
@@ -54,7 +56,7 @@ function ModeSelector({ onSelect }) {
     <div className="mode-selector">
       <button className="mode-card" onClick={() => onSelect("wizard")}>
         <img
-          src="/asset/johnny-automatic-ceratite.svg"
+          src={ceratiteIcon}
           alt="Adım adım tanı"
           className="mode-icon-svg"
         />
@@ -63,7 +65,7 @@ function ModeSelector({ onSelect }) {
       </button>
       <button className="mode-card" onClick={() => onSelect("scoring")}>
         <img
-          src="/asset/foraminifera.svg"
+          src={foraminiferaIcon}
           alt="Karakter puanlama"
           className="mode-icon-svg"
         />
