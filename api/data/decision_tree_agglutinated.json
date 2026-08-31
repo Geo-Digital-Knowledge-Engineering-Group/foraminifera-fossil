@@ -1,0 +1,237 @@
+{
+  "module": "AGGLUTINATED",
+  "entry": "AGG_Q1",
+  "note": "Encoded 1:1 from the v1.0 document decision tree. Each question references a CHR_ID where the observation maps to a controlled character; composite visual questions keep chr_id null with an observation_hint listing related CHR_IDs for later curation.",
+  "nodes": [
+    {"id": "AGG_Q1", "type": "question", "chr_id": "CHR_03", "code": "1",
+     "text_en": "Are true septa separating distinct chambers present?",
+     "text_tr": "Belirgin locaları birbirinden ayıran gerçek septalar var mı?",
+     "answers": [
+       {"value": "ABSENT", "label_en": "No", "label_tr": "Hayır", "next": "AGG_Q2A", "annotation": "UNDIVIDED TEST"},
+       {"value": "PRESENT", "label_en": "Yes", "label_tr": "Evet", "next": "AGG_Q2B", "annotation": "MULTICHAMBERED TEST"}
+     ]},
+    {"id": "AGG_Q2A", "type": "question", "chr_id": "CHR_02", "code": "2A",
+     "text_en": "What is the general test form?",
+     "text_tr": "Genel kavkı şekli nedir?",
+     "answers": [
+       {"value": "GLOBULAR", "label_en": "Globular / sac-like", "label_tr": "Küresel / kese biçimli", "next": "AGG_Q3A", "also_values": ["SAC_LIKE"]},
+       {"value": "TUBULAR", "label_en": "Elongated tubular and uncoiled", "label_tr": "Uzamış tübüler ve sarılmamış", "next": "AGG_Q3B", "constraint": {"CHR_06": "UNCOILED"}},
+       {"value": "TUBULAR", "label_en": "Tubular and coiled", "label_tr": "Tübüler ve sarılmış", "next": "AGG_Q3C", "constraint": {"CHR_06": "!UNCOILED"}}
+     ]},
+    {"id": "AGG_Q3A", "type": "question", "chr_id": null, "code": "3A",
+     "observation_hint": ["wall grain texture"],
+     "text_en": "Is the wall dominated by conspicuous coarse sediment grains?",
+     "text_tr": "Duvar belirgin iri sediment tanelerinden mi oluşuyor?",
+     "answers": [
+       {"value": "YES", "next": "GENUS:Psammosphaera", "evidence": ["approximately spherical test", "single cavity", "coarse agglutinated wall"]},
+       {"value": "NO", "next": "GENUS:Saccammina", "evidence": ["globular / sac-like test", "single cavity", "comparatively coherent wall"]}
+     ]},
+    {"id": "AGG_Q3B", "type": "question", "chr_id": null, "code": "3B",
+     "observation_hint": ["tube branching"],
+     "text_en": "Does the tube branch?",
+     "text_tr": "Tüp dallanıyor mu?",
+     "answers": [
+       {"value": "NO", "next": "AGG_Q4A"},
+       {"value": "YES", "next": "AGG_Q4B"}
+     ]},
+    {"id": "AGG_Q4A", "type": "question", "chr_id": null, "code": "4A",
+     "observation_hint": ["tube wall robustness"],
+     "text_en": "Is the tube relatively thick, regular and rigid?",
+     "text_tr": "Tüp görece kalın, düzenli ve sağlam mı?",
+     "answers": [
+       {"value": "YES", "next": "GENUS:Bathysiphon"},
+       {"value": "NO", "next": "GENUS:Rhizammina", "evidence": ["very thin", "flexible", "irregular/flexuous"]}
+     ]},
+    {"id": "AGG_Q4B", "type": "question", "chr_id": null, "code": "4B",
+     "observation_hint": ["branch geometry"],
+     "text_en": "Do relatively robust branches radiate from a central region?",
+     "text_tr": "Görece sağlam dallar merkezi bir bölgeden ışınsal mı çıkıyor?",
+     "answers": [
+       {"value": "YES", "next": "GENUS:Rhabdammina"},
+       {"value": "NO", "next": "GENUS:Rhizammina", "evidence": ["thin", "irregular", "flexible branching/network"]}
+     ]},
+    {"id": "AGG_Q3C", "type": "question", "chr_id": "CHR_07", "code": "3C",
+     "text_en": "Does the tube coil regularly in a single plane?",
+     "text_tr": "Tüp tek düzlemde düzenli olarak sarılıyor mu?",
+     "answers": [
+       {"value": "SINGLE_PLANE", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Ammodiscus", "evidence": ["regular planispiral tubular coil", "no true septa"]},
+       {"value": "CHANGING_PLANES", "label_en": "No", "label_tr": "Hayır", "next": "GENUS:Glomospira", "evidence": ["coiling plane repeatedly changes", "irregular/glomospiral appearance", "no true septa"]}
+     ]},
+    {"id": "AGG_Q2B", "type": "question", "chr_id": null, "code": "2B",
+     "observation_hint": ["CHR_02", "CHR_13"],
+     "text_en": "Is the test large and conical, with clear internal partitions/subdivisions?",
+     "text_tr": "Kavkı büyük ve konik, belirgin iç bölmelere sahip mi?",
+     "answers": [
+       {"value": "YES", "next": "AGG_Q3D", "annotation": "LARGE CONICAL AGGLUTINATED FORMS"},
+       {"value": "NO", "next": "AGG_Q3E", "annotation": "SMALL-MEDIUM MULTICHAMBERED FORMS"}
+     ]},
+    {"id": "AGG_Q3D", "type": "question", "chr_id": "CHR_13", "code": "3D",
+     "text_en": "Are well-developed radial or vertical partitions present in the marginal chamber zone?",
+     "text_tr": "Marjinal loca bölgesinde iyi gelişmiş radyal/düşey bölmeler var mı?",
+     "answers": [
+       {"value": "ABSENT", "label_en": "No", "label_tr": "Hayır", "next": "GENUS:Coskinolina",
+        "evidence": ["conical test", "relatively simple marginal chamber lumen", "no developed marginal exoskeletal subdivision"]},
+       {"value": "RADIAL", "label_en": "Yes", "label_tr": "Evet", "next": "AGG_Q4C", "also_values": ["VERTICAL"]}
+     ]},
+    {"id": "AGG_Q4C", "type": "question", "chr_id": "CHR_10", "code": "4C",
+     "text_en": "Is the internal architecture strongly reticulate/labyrinthic, with numerous secondary compartments?",
+     "text_tr": "İç mimari çok sayıda ikincil bölme içeren güçlü retiküler/labirentik yapıda mı?",
+     "answers": [
+       {"value": "LABYRINTHIC", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Dictyoconus", "also_values": ["RETICULATE"]},
+       {"value": "SUBDIVIDED", "label_en": "No", "label_tr": "Hayır", "next": "AGG_Q5A"}
+     ]},
+    {"id": "AGG_Q5A", "type": "question", "chr_id": "CHR_13", "code": "5A",
+     "text_en": "Is the test high-conical, with distinct radial subepidermal partitions?",
+     "text_tr": "Kavkı yüksek konik ve belirgin radyal subepidermal bölmeli mi?",
+     "answers": [
+       {"value": "SUBEPIDERMAL", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Barattolites"},
+       {"value": "OTHER", "label_en": "No", "label_tr": "Hayır", "next": "INDETERMINATE:LARGE_CONICAL_AGGLUTINATED"}
+     ]},
+    {"id": "AGG_Q3E", "type": "question", "chr_id": "CHR_05", "code": "3E",
+     "text_en": "What is the chamber arrangement?",
+     "text_tr": "Loca dizilimi nasıl?",
+     "answers": [
+       {"value": "UNISERIAL", "next": "AGG_Q4D"},
+       {"value": "PLANISPIRAL", "next": "AGG_Q4E", "note": "Coiling observation: stored as CHR_06=PLANISPIRAL, not under CHR_05.", "maps_to": {"CHR_06": "PLANISPIRAL"}},
+       {"value": "STREPTOSPIRAL", "label_en": "Streptospiral / coiling axis changes", "next": "AGG_Q4F", "maps_to": {"CHR_06": "STREPTOSPIRAL"}},
+       {"value": "TROCHOSPIRAL", "next": "AGG_Q4G", "maps_to": {"CHR_06": "TROCHOSPIRAL"}},
+       {"value": "BISERIAL", "next": "AGG_Q4H"},
+       {"value": "TRISERIAL", "next": "AGG_Q4I"},
+       {"value": "CHANGES_DURING_GROWTH", "label_en": "Arrangement changes during growth", "label_tr": "Dizilim büyüme boyunca değişiyor", "next": "AGG_Q4J", "maps_to": {"CHR_09": "*"}},
+       {"value": "FLATTENED_SIGMOID", "label_en": "Flattened / sigmoid serial organization", "label_tr": "Basık / sigmoid seri organizasyon", "next": "AGG_Q4K"}
+     ]},
+    {"id": "AGG_Q4D", "type": "question", "chr_id": null, "code": "4D",
+     "observation_hint": ["chamber shape"],
+     "text_en": "Are the chambers distinctly globular / pyriform?",
+     "text_tr": "Localar belirgin küresel / armut biçimli mi?",
+     "answers": [
+       {"value": "YES", "next": "AGG_Q5B"},
+       {"value": "NO", "next": "GENUS:Reophax", "evidence": ["irregular elongate uniserial chambers", "direct chamber-to-chamber connections"]}
+     ]},
+    {"id": "AGG_Q5B", "type": "question", "chr_id": null, "code": "5B",
+     "observation_hint": ["chamber connections"],
+     "text_en": "Are adjacent chambers joined by distinct narrow necks?",
+     "text_tr": "Komşu localar belirgin dar boyunlarla mı bağlanıyor?",
+     "answers": [
+       {"value": "YES", "next": "GENUS:Hormosina"},
+       {"value": "NO", "next": "AGG_Q6A"}
+     ]},
+    {"id": "AGG_Q6A", "type": "question", "chr_id": null, "code": "6A",
+     "observation_hint": ["chamber shape"],
+     "text_en": "Are the chambers elongate/bottle-shaped with narrow caudate connections?",
+     "text_tr": "Localar uzamış/şişe biçimli ve dar kaudal bağlantılı mı?",
+     "answers": [
+       {"value": "YES", "next": "GENUS:Caudammina"},
+       {"value": "NO", "next": "GENUS:Reophax"}
+     ]},
+    {"id": "AGG_Q4E", "type": "question", "chr_id": "CHR_11", "code": "4E",
+     "text_en": "Are the chambers internally secondarily subdivided?",
+     "text_tr": "Localar içten ikincil bölmelere ayrılmış mı?",
+     "answers": [
+       {"value": "ABSENT", "label_en": "No", "label_tr": "Hayır", "next": "AGG_Q5C"},
+       {"value": "PRESENT", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Reticulophragmium",
+        "evidence": ["secondary internal compartments", "reticulate/labyrinthic architecture"]}
+     ]},
+    {"id": "AGG_Q5C", "type": "question", "chr_id": "CHR_09", "code": "5C",
+     "text_en": "Does the test remain planispiral throughout growth?",
+     "text_tr": "Kavkı büyüme boyunca planispiral kalıyor mu?",
+     "answers": [
+       {"value": "NONE", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Haplophragmoides"},
+       {"value": "PLANISPIRAL_TO_UNISERIAL", "label_en": "No", "label_tr": "Hayır", "next": "GENUS:Ammobaculites",
+        "evidence": ["later chambers become uncoiled/uniserial"]}
+     ]},
+    {"id": "AGG_Q4F", "type": "question", "chr_id": "CHR_03", "code": "4F",
+     "text_en": "Are true septa present?",
+     "text_tr": "Gerçek septalar var mı?",
+     "answers": [
+       {"value": "PRESENT", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Recurvoides",
+        "evidence": ["compact multichambered test", "changing coiling axis"]},
+       {"value": "ABSENT", "label_en": "No", "label_tr": "Hayır", "next": "GENUS:Glomospira",
+        "annotation": "RETURN TO UNDIVIDED COILED BRANCH",
+        "evidence": ["irregular changing-plane tubular coil"]}
+     ]},
+    {"id": "AGG_Q4G", "type": "question", "chr_id": null, "code": "4G",
+     "observation_hint": ["CHR_06", "chamber inflation", "spiral/umbilical differentiation"],
+     "text_en": "Is the test low trochospiral, with inflated chambers and distinct spiral/umbilical sides?",
+     "text_tr": "Kavkı alçak trokospiral, locaları şişkin ve spiral/umbilikal tarafları ayırt edilebilir mi?",
+     "answers": [
+       {"value": "YES", "next": "GENUS:Trochammina"},
+       {"value": "NO", "next": "AGG_Q5D"}
+     ]},
+    {"id": "AGG_Q5D", "type": "question", "chr_id": "CHR_09", "code": "5D",
+     "text_en": "Does the early coiled/triserial part pass into a distinct elongate serial adult part?",
+     "text_tr": "Erken sarılı/triserial bölüm belirgin uzamış seri erişkin bölüme geçiyor mu?",
+     "answers": [
+       {"value": "COILED_TO_SERIAL", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Karrerulina"},
+       {"value": "NONE", "label_en": "No", "label_tr": "Hayır", "next": "INDETERMINATE:TROCHOSPIRAL_AGGLUTINATED"}
+     ]},
+    {"id": "AGG_Q4H", "type": "question", "chr_id": "CHR_09", "code": "4H",
+     "text_en": "Is the observable test biserial from early to adult growth?",
+     "text_tr": "Gözlenebilen kavkı erken evreden erişkin evreye kadar biserial mi?",
+     "answers": [
+       {"value": "NONE", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Textularia"},
+       {"value": "*", "label_en": "No", "label_tr": "Hayır", "next": "AGG_Q5E"}
+     ]},
+    {"id": "AGG_Q5E", "type": "question", "chr_id": "CHR_09", "code": "5E",
+     "text_en": "Is an early planispiral coiled part present?",
+     "text_tr": "Erken planispiral sarılmış bölüm var mı?",
+     "answers": [
+       {"value": "PLANISPIRAL_TO_BISERIAL", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Spiroplectammina"},
+       {"value": "*", "label_en": "No", "label_tr": "Hayır", "next": "AGG_Q6B"}
+     ]},
+    {"id": "AGG_Q6B", "type": "question", "chr_id": "CHR_09", "code": "6B",
+     "text_en": "Is an early triserial part present?",
+     "text_tr": "Erken triserial bölüm var mı?",
+     "answers": [
+       {"value": "TRISERIAL_TO_BISERIAL", "label_en": "Yes", "label_tr": "Evet", "next": "AGG_Q7A"},
+       {"value": "*", "label_en": "No", "label_tr": "Hayır", "next": "INDETERMINATE:BISERIAL_AGGLUTINATED"}
+     ]},
+    {"id": "AGG_Q7A", "type": "question", "chr_id": "CHR_02", "code": "7A",
+     "text_en": "Is the test slender/elongate rather than robustly conical?",
+     "text_tr": "Kavkı sağlam konik olmak yerine ince/uzamış mı?",
+     "answers": [
+       {"value": "ELONGATE", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Gaudryina"},
+       {"value": "CONICAL", "label_en": "No", "label_tr": "Hayır", "next": "GENUS:Dorothia", "evidence": ["robust/tapering/conical test"]}
+     ]},
+    {"id": "AGG_Q4I", "type": "question", "chr_id": "CHR_09", "code": "4I",
+     "text_en": "Does the triserial arrangement continue into the adult part?",
+     "text_tr": "Triserial dizilim erişkin bölümde devam ediyor mu?",
+     "answers": [
+       {"value": "NONE", "label_en": "Yes", "label_tr": "Evet", "next": "REDIRECT:CHECK_KARRERULINA_RELATED",
+        "annotation": "CHECK KARRERULINA / RELATED SERIAL MORPHOLOGY"},
+       {"value": "*", "label_en": "No", "label_tr": "Hayır", "next": "AGG_Q5F"}
+     ]},
+    {"id": "AGG_Q5F", "type": "question", "chr_id": "CHR_09", "code": "5F",
+     "text_en": "What does the adult arrangement become?",
+     "text_tr": "Erişkin loca dizilimi neye dönüşüyor?",
+     "answers": [
+       {"value": "TRISERIAL_TO_BISERIAL", "label_en": "Biserial", "next": "AGG_Q6C"},
+       {"value": "TRISERIAL_TO_UNISERIAL", "label_en": "Uniserial", "next": "GENUS:Clavulina"}
+     ]},
+    {"id": "AGG_Q6C", "type": "question", "chr_id": "CHR_02", "code": "6C",
+     "text_en": "Test slender/elongate?",
+     "text_tr": "Kavkı ince/uzamış mı?",
+     "answers": [
+       {"value": "ELONGATE", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Gaudryina"},
+       {"value": "CONICAL", "label_en": "No, robust/tapering", "label_tr": "Hayır, sağlam/konikleşen", "next": "GENUS:Dorothia"}
+     ]},
+    {"id": "AGG_Q4J", "type": "question", "chr_id": "CHR_09", "code": "4J",
+     "text_en": "What is the observed transition?",
+     "text_tr": "Gözlenen geçiş hangisi?",
+     "answers": [
+       {"value": "PLANISPIRAL_TO_UNISERIAL", "next": "GENUS:Ammobaculites"},
+       {"value": "PLANISPIRAL_TO_BISERIAL", "next": "GENUS:Spiroplectammina"},
+       {"value": "TRISERIAL_TO_BISERIAL", "next": "AGG_Q6C"},
+       {"value": "TRISERIAL_TO_UNISERIAL", "next": "GENUS:Clavulina"},
+       {"value": "COILED_TO_SERIAL", "label_en": "Early coiled/triserial to distinct elongate serial adult", "next": "GENUS:Karrerulina"}
+     ]},
+    {"id": "AGG_Q4K", "type": "question", "chr_id": null, "code": "4K",
+     "observation_hint": ["CHR_02", "sigmoid arrangement"],
+     "text_en": "Is the test strongly compressed, with a characteristic sigmoid/rzehakinid chamber arrangement?",
+     "text_tr": "Kavkı belirgin basık ve karakteristik sigmoid/rzehakinid loca dizilimli mi?",
+     "answers": [
+       {"value": "YES", "next": "GENUS:Rzehakina"},
+       {"value": "NO", "next": "REDIRECT:RETURN_TO_BISERIAL_BRANCH"}
+     ]}
+  ]
+}

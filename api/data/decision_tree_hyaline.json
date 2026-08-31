@@ -1,0 +1,209 @@
+{
+  "module": "HYALINE",
+  "entry": "HYA_Q1",
+  "note": "Encoded 1:1 from v1.0 document. Document reuses question codes (e.g. 3B, 4C) across branches; node ids are unique while 'code' preserves the document numbering. Branch A covers nummulitids incl. the four extended-card genera; branch B rotaliids (large/small); branch C orthophragminids (section-sensitive group per the Section Orientation Control rule).",
+  "nodes": [
+    {"id": "HYA_Q1", "type": "question", "chr_id": "CHR_06", "code": "1",
+     "text_en": "What is the basic chamber / growth arrangement?",
+     "text_tr": "Temel loca / büyüme düzeni nasıl?",
+     "answers": [
+       {"value": "PLANISPIRAL", "label_en": "Planispiral", "next": "HYA_Q2A"},
+       {"value": "TROCHOSPIRAL", "label_en": "Trochospiral", "next": "HYA_Q2B"},
+       {"value": "ANNULAR_CYCLIC", "label_en": "Annular / cyclic discoidal", "label_tr": "Annular / siklik diskoidal", "next": "HYA_Q2C", "maps_to": {"CHR_05": "ANNULAR"}}
+     ]},
+    {"id": "HYA_Q2A", "type": "question", "chr_id": "CHR_11", "code": "2A",
+     "text_en": "Are chambers secondarily subdivided into smaller chamberlets?",
+     "text_tr": "Localar ikincil olarak daha küçük locacıklara bölünmüş mü?",
+     "answers": [
+       {"value": "PRESENT", "label_en": "Yes", "label_tr": "Evet", "next": "HYA_Q3A"},
+       {"value": "ABSENT", "label_en": "No", "label_tr": "Hayır", "next": "HYA_Q3B"}
+     ]},
+    {"id": "HYA_Q3A", "type": "question", "chr_id": "CHR_15", "code": "3A",
+     "text_en": "Are lateral chambers / chamberlets developed above and below the equatorial layer?",
+     "text_tr": "Ekvatoryal tabakanın üstünde ve altında lateral localar/locacıklar gelişmiş mi?",
+     "answers": [
+       {"value": "ABSENT", "label_en": "No / very weak", "label_tr": "Hayır / çok zayıf", "next": "GENUS:Heterostegina",
+        "also_values": ["WEAKLY_DEVELOPED"], "evidence": ["equatorial chambers subdivided"]},
+       {"value": "PRESENT", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Spiroclypeus",
+        "also_values": ["WELL_DEVELOPED"], "evidence": ["lateral chamberlets", "pillars"]}
+     ]},
+    {"id": "HYA_Q3B", "type": "question", "chr_id": "CHR_17", "code": "3B",
+     "text_en": "Is a thickened marginal cord / peripheral canal system visible?",
+     "text_tr": "Kalınlaşmış marjinal kordon / periferik kanal sistemi görülüyor mu?",
+     "answers": [
+       {"value": "ABSENT", "label_en": "No", "label_tr": "Hayır", "next": "GENUS:Lenticulina",
+        "evidence": ["simple lenticular planispiral test", "no secondary chamberlets", "no developed marginal cord"]},
+       {"value": "PRESENT", "label_en": "Yes", "label_tr": "Evet", "next": "HYA_Q4A"}
+     ]},
+    {"id": "HYA_Q4A", "type": "question", "chr_id": "CHR_17", "code": "4A",
+     "text_en": "Is the marginal cord exceptionally thick / massive?",
+     "text_tr": "Marjinal kordon olağanüstü kalın / masif mi?",
+     "answers": [
+       {"value": "STRONG", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Chordoperculinoides"},
+       {"value": "WEAK", "label_en": "No", "label_tr": "Hayır", "next": "HYA_Q5A"}
+     ]},
+    {"id": "HYA_Q5A", "type": "question", "chr_id": "CHR_02", "code": "5A",
+     "text_en": "Is the test very thin and strongly flattened?",
+     "text_tr": "Kavkı çok ince ve belirgin yassı mı?",
+     "answers": [
+       {"value": "FLATTENED", "label_en": "Yes", "label_tr": "Evet", "next": "HYA_Q6A"},
+       {"value": "LENTICULAR", "label_en": "No", "label_tr": "Hayır", "next": "HYA_Q6B"}
+     ]},
+    {"id": "HYA_Q6A", "type": "question", "chr_id": "CHR_08", "code": "6A",
+     "text_en": "Are earlier whorls very widely exposed and coiling very open?",
+     "text_tr": "Önceki turlar çok geniş biçimde açık ve sarılım çok gevşek mi?",
+     "answers": [
+       {"value": "EVOLUTE", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Operculina"},
+       {"value": "SEMI_INVOLUTE", "label_en": "No — test remains extremely flat/planar", "label_tr": "Hayır — kavkı son derece yassı/düzlemsel kalıyor", "next": "GENUS:Planocamerinoides"}
+     ]},
+    {"id": "HYA_Q6B", "type": "question", "chr_id": "CHR_08", "code": "6B",
+     "text_en": "How exposed are the earlier whorls?",
+     "text_tr": "Önceki turlar ne kadar açıkta?",
+     "answers": [
+       {"value": "INVOLUTE", "label_en": "Mostly covered / involute", "label_tr": "Çoğunlukla örtülü / involüt", "next": "HYA_Q7A"},
+       {"value": "SEMI_INVOLUTE", "label_en": "Partly exposed / semi-evolute", "label_tr": "Kısmen açık / yarı evolüt", "next": "HYA_Q7B"},
+       {"value": "EVOLUTE", "label_en": "Widely exposed / evolute", "label_tr": "Geniş açık / evolüt", "next": "GENUS:Operculina"}
+     ]},
+    {"id": "HYA_Q7A", "type": "question", "chr_id": "CHR_14", "code": "7A",
+     "text_en": "Is the test robust, thick-lenticular, with strong internal pillars?",
+     "text_tr": "Kavkı sağlam, kalın-lentiküler ve iç pillarlar güçlü mü?",
+     "answers": [
+       {"value": "STRONG", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Ranikothalia"},
+       {"value": "ABSENT", "label_en": "No", "label_tr": "Hayır", "next": "GENUS:Nummulites",
+        "also_values": ["WEAK"], "evidence": ["involute planispiral test", "well-developed marginal cord", "septal filaments"]}
+     ]},
+    {"id": "HYA_Q7B", "type": "question", "chr_id": "CHR_02", "code": "7B",
+     "text_en": "Is the test flatter than typical involute forms, with several earlier whorls visible?",
+     "text_tr": "Kavkı daha yassı ve birkaç önceki tur görünür mü?",
+     "answers": [
+       {"value": "FLATTENED", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Assilina"},
+       {"value": "LENTICULAR", "label_en": "No", "label_tr": "Hayır", "next": "HYA_Q8A"}
+     ]},
+    {"id": "HYA_Q8A", "type": "question", "chr_id": null, "code": "8A",
+     "observation_hint": ["coiling tightness", "CHR_02"],
+     "text_en": "Is the test compact, with relatively tight coiling?",
+     "text_tr": "Kavkı kompakt ve sarılım nispeten sıkı mı?",
+     "answers": [
+       {"value": "YES", "next": "GENUS:Nummulitoides"},
+       {"value": "NO", "next": "GENUS:Palaeonummulites",
+        "evidence": ["simple early nummulitid architecture", "no massive marginal cord", "no extreme flattening"]}
+     ]},
+    {"id": "HYA_Q2B", "type": "question", "chr_id": "CHR_10", "code": "2B",
+     "text_en": "Is the test large and internally complex, or small-medium and relatively simple?",
+     "text_tr": "Kavkı büyük ve iç yapısı karmaşık mı, yoksa küçük-orta ve görece basit mi?",
+     "answers": [
+       {"value": "COMPLEX", "label_en": "Large / complex", "label_tr": "Büyük / karmaşık", "next": "HYA_Q3BT"},
+       {"value": "SIMPLE", "label_en": "Small-medium", "label_tr": "Küçük-orta", "next": "HYA_Q3CS"}
+     ]},
+    {"id": "HYA_Q3BT", "type": "question", "chr_id": "CHR_02", "code": "3B(T)",
+     "text_en": "Is the test strongly conical or conico-lenticular?",
+     "text_tr": "Kavkı belirgin konik veya koniko-lentiküler mi?",
+     "answers": [
+       {"value": "CONICAL", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Lockhartia",
+        "evidence": ["strong dorsal/ventral asymmetry", "robust internal pillars"]},
+       {"value": "LENTICULAR", "label_en": "No", "label_tr": "Hayır", "next": "HYA_Q4BT"}
+     ]},
+    {"id": "HYA_Q4BT", "type": "question", "chr_id": "CHR_14", "code": "4B(T)",
+     "text_en": "Is the central / umbilical region strongly thickened?",
+     "text_tr": "Merkezi / umbilikal bölge belirgin kalınlaşmış mı?",
+     "answers": [
+       {"value": "STRONG", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Kathina",
+        "evidence": ["compact lenticular test", "strong pillars"]},
+       {"value": "WEAK", "label_en": "No", "label_tr": "Hayır", "next": "HYA_Q5BT", "also_values": ["ABSENT"]}
+     ]},
+    {"id": "HYA_Q5BT", "type": "question", "chr_id": null, "code": "5B(T)",
+     "observation_hint": ["peripheral internal zone", "CHR_02"],
+     "text_en": "Is the test relatively flattened with a clearly differentiated peripheral internal zone?",
+     "text_tr": "Kavkı görece yassı ve periferik iç bölge belirgin farklılaşmış mı?",
+     "answers": [
+       {"value": "YES", "next": "GENUS:Daviesina"},
+       {"value": "NO", "next": "HYA_Q6BT"}
+     ]},
+    {"id": "HYA_Q6BT", "type": "question", "chr_id": "CHR_14", "code": "6B(T)",
+     "text_en": "Is the test large, robust, with numerous well-developed pillars / canal structures?",
+     "text_tr": "Kavkı iri, sağlam ve çok sayıda gelişmiş pillar / kanal yapısı var mı?",
+     "answers": [
+       {"value": "STRONG", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Miscellanea"},
+       {"value": "WEAK", "label_en": "No", "label_tr": "Hayır", "next": "INDETERMINATE:LARGE_ROTALIID", "also_values": ["ABSENT"]}
+     ]},
+    {"id": "HYA_Q3CS", "type": "question", "chr_id": "CHR_14", "code": "3C(S)",
+     "text_en": "Is the test robust with a strongly thickened central region?",
+     "text_tr": "Kavkı sağlam ve merkezi bölge belirgin kalınlaşmış mı?",
+     "answers": [
+       {"value": "STRONG", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Laffitteina"},
+       {"value": "WEAK", "label_en": "No", "label_tr": "Hayır", "next": "HYA_Q4CS", "also_values": ["ABSENT"]}
+     ]},
+    {"id": "HYA_Q4CS", "type": "question", "chr_id": "CHR_02", "code": "4C(S)",
+     "text_en": "Is the test simply biconvex, without strong peripheral ornament or specialisation?",
+     "text_tr": "Kavkı basit bikonveks ve periferi belirgin özelleşmemiş mi?",
+     "answers": [
+       {"value": "LENTICULAR", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Rotalia"},
+       {"value": "OTHER", "label_en": "No", "label_tr": "Hayır", "next": "HYA_Q5CS"}
+     ]},
+    {"id": "HYA_Q5CS", "type": "question", "chr_id": null, "code": "5C(S)",
+     "observation_hint": ["peripheral angularity"],
+     "text_en": "Is the periphery distinctly angular / sharply differentiated?",
+     "text_tr": "Periferi belirgin köşeli / keskin farklılaşmış mı?",
+     "answers": [
+       {"value": "YES", "next": "GENUS:Pararotalia"},
+       {"value": "NO", "next": "HYA_Q6CS"}
+     ]},
+    {"id": "HYA_Q6CS", "type": "question", "chr_id": null, "code": "6C(S)",
+     "observation_hint": ["internal/peripheral chamber pattern"],
+     "text_en": "Is there a distinct, repeatable internal/peripheral chamber pattern without strong surface ornament?",
+     "text_tr": "Belirgin, tekrarlanabilir bir iç/periferik loca düzeni var, fakat güçlü yüzey ornamentasyonu yok mu?",
+     "answers": [
+       {"value": "YES", "next": "GENUS:Cuvillierina"},
+       {"value": "NO", "next": "HYA_Q7CS"}
+     ]},
+    {"id": "HYA_Q7CS", "type": "question", "chr_id": null, "code": "7C(S)",
+     "observation_hint": ["surface ornament"],
+     "text_en": "Is strong radial / ornate surface ornament present?",
+     "text_tr": "Belirgin radyal / süslü yüzey ornamentasyonu var mı?",
+     "answers": [
+       {"value": "YES", "next": "GENUS:Ornatorotalia"},
+       {"value": "NO", "next": "HYA_Q8CS"}
+     ]},
+    {"id": "HYA_Q8CS", "type": "question", "chr_id": null, "code": "8C(S)",
+     "observation_hint": ["wall texture"],
+     "text_en": "Is the wall / surface coarsely granular or pustulose?",
+     "text_tr": "Duvar / yüzey kaba granüler veya püstüllü mü?",
+     "answers": [
+       {"value": "YES", "next": "GENUS:Granorotalia"},
+       {"value": "NO", "next": "INDETERMINATE:SMALL_ROTALIID"}
+     ]},
+    {"id": "HYA_Q2C", "type": "question", "chr_id": "CHR_11", "code": "2C",
+     "section_sensitive": true,
+     "text_en": "Is an equatorial layer with numerous chamberlets present?",
+     "text_tr": "Çok sayıda locacık içeren ekvatoryal tabaka var mı?",
+     "answers": [
+       {"value": "ABSENT", "label_en": "No", "label_tr": "Hayır", "next": "REDIRECT:RETURN_TO_OTHER_BRANCHES"},
+       {"value": "PRESENT", "label_en": "Yes", "label_tr": "Evet", "next": "HYA_Q3C", "evidence": ["lateral chambers present"]}
+     ]},
+    {"id": "HYA_Q3C", "type": "question", "chr_id": "CHR_02", "code": "3C",
+     "section_sensitive": true,
+     "text_en": "Does the test have strong radial rays or a stellate outline?",
+     "text_tr": "Kavkıda güçlü radyal ışınlar veya yıldızsı dış şekil var mı?",
+     "answers": [
+       {"value": "STELLATE", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Asterocyclina"},
+       {"value": "DISCOIDAL", "label_en": "No", "label_tr": "Hayır", "next": "HYA_Q4C"}
+     ]},
+    {"id": "HYA_Q4C", "type": "question", "chr_id": null, "code": "4C",
+     "section_sensitive": true,
+     "observation_hint": ["annular stolons", "CHR_11"],
+     "text_en": "Are annular stolons visible between equatorial chamberlets?",
+     "text_tr": "Ekvatoryal locacıklar arasında annular stolonlar görülüyor mu?",
+     "answers": [
+       {"value": "YES", "next": "GENUS:Discocyclina"},
+       {"value": "NO", "next": "HYA_Q5C"}
+     ]},
+    {"id": "HYA_Q5C", "type": "question", "chr_id": "CHR_12", "code": "5C",
+     "section_sensitive": true,
+     "text_en": "Examine the embryonic apparatus and equatorial chamberlets.",
+     "text_tr": "Embriyonik aparat ve ekvatoryal locacıkları incele.",
+     "answers": [
+       {"value": "COMPLEX", "label_en": "Equatorial chamberlets form the Orbitoclypeus pattern; embryonic apparatus compatible", "label_tr": "Ekvatoryal locacıklar Orbitoclypeus düzenini oluşturuyor; embriyonik aparat uyumlu", "next": "GENUS:Orbitoclypeus"},
+       {"value": "SIMPLE", "label_en": "Smaller / simpler embryonic apparatus; Nemkovella-type equatorial chamberlet organisation", "label_tr": "Daha küçük / basit embriyonik aparat; Nemkovella tipi ekvatoryal locacık düzeni", "next": "GENUS:Nemkovella", "also_values": ["BILOCULAR"]}
+     ]}
+  ]
+}

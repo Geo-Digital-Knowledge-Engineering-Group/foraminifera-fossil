@@ -1,18 +1,25 @@
 :root {
-  --color-background: #FFFFCC; /* Classic SAP ALV Yellow */
+  /* Backgrounds */
+  --color-background: #f8fafc; /* Slate 50 */
   --color-surface: #ffffff;
   
-  --color-text: #000000;
-  --color-text-muted: #333333;
+  /* Text */
+  --color-text: #0f172a; /* Slate 900 */
+  --color-text-muted: #64748b; /* Slate 500 */
   
-  --color-border: #808080;
+  /* Borders */
+  --color-border: #e2e8f0; /* Slate 200 */
   
-  --color-primary: #008000; /* Classic green */
-  --color-sap-bg: #d4d0c8; /* Windows 95/SAP classic gray */
+  /* Primary - Emerald/Teal */
+  --color-primary: #0f766e; /* Teal 600 */
+  --color-primary-hover: #0d9488; /* Teal 500 */
+  
+  /* Utilities */
+  --color-sap-bg: #f1f5f9; /* Slate 100 */
 
+  /* Layout */
   --page-max-width: 1000px;
-
-  --spacing-small: 4px;
-  --spacing-medium: 8px;
-  --spacing-large: 12px;
+  --spacing-small: 16px;
+  --spacing-medium: 24px;
+  --spacing-large: 32px;
 }

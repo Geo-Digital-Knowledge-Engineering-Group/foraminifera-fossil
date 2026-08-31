@@ -1,0 +1,182 @@
+{
+  "module": "PORCELANEOUS",
+  "entry": "PORC_Q1",
+  "note": "Encoded 1:1 from v1.0 document (ORDER MILIOLIDA tree). Nested single-branch confirmation questions in the Lacazinid block are flattened into explicit YES/NO questions; unstated NO paths fall through to the next sibling question as implied by the tree layout. Per the document's closing note, every question must also accept NOT_OBSERVABLE and UNCERTAIN without eliminating candidates.",
+  "nodes": [
+    {"id": "PORC_Q1", "type": "question", "chr_id": "CHR_03", "code": "Q1",
+     "text_en": "Are true chambers separated by septa present?",
+     "text_tr": "Septalarla ayrılmış gerçek localar var mı?",
+     "answers": [
+       {"value": "ABSENT", "label_en": "No", "label_tr": "Hayır", "next": "PORC_Q1U", "annotation": "UNDIVIDED TUBULAR CHAMBER"},
+       {"value": "PRESENT", "label_en": "Yes", "label_tr": "Evet", "next": "PORC_Q2"}
+     ]},
+    {"id": "PORC_Q1U", "type": "question", "chr_id": "CHR_19", "code": "Q1U",
+     "observation_hint": ["CHR_06", "CHR_07"],
+     "text_en": "How is the undivided tube coiled and attached?",
+     "text_tr": "Bölünmemiş tüp nasıl sarılmış ve tutunmuş?",
+     "answers": [
+       {"value": "FREE", "label_en": "Tube regularly coiled in one plane; free or loosely attached test", "label_tr": "Tüp tek düzlemde düzenli sarılmış; serbest veya gevşek tutunmuş kavkı", "next": "GENUS:Cornuspira", "maps_to": {"CHR_07": "SINGLE_PLANE"}},
+       {"value": "ATTACHED", "label_en": "Test irregularly coiled, encrusting or firmly attached to substrate", "label_tr": "Kavkı düzensiz sarılmış, kabuklayıcı veya zemine sıkıca tutunmuş", "next": "GENUS:Nubecularia", "maps_to": {"CHR_06": "IRREGULAR_COILING"}}
+     ]},
+    {"id": "PORC_Q2", "type": "question", "chr_id": "CHR_10", "code": "Q2",
+     "text_en": "Are the chambers internally subdivided into chamberlets or secondary compartments?",
+     "text_tr": "Localar içten locacıklara veya ikincil bölmelere ayrılmış mı?",
+     "answers": [
+       {"value": "SIMPLE", "label_en": "No — simple chambers", "label_tr": "Hayır — basit localar", "next": "PORC_Q3"},
+       {"value": "SUBDIVIDED", "label_en": "Yes — complex internally subdivided test", "label_tr": "Evet — karmaşık, içten bölünmüş kavkı", "next": "PORC_Q4"}
+     ]},
+    {"id": "PORC_Q3", "type": "question", "chr_id": "CHR_05", "code": "Q3",
+     "text_en": "What is the chamber arrangement?",
+     "text_tr": "Loca dizilimi nasıl?",
+     "answers": [
+       {"value": "QUINQUELOCULINE", "next": "PORC_Q3A", "annotation": "Five chamber positions around the longitudinal axis"},
+       {"value": "TRILOCULINE", "next": "PORC_Q3B", "annotation": "Three dominant chamber positions; final three chambers visible"},
+       {"value": "BILOCULINE", "next": "PORC_Q3C", "annotation": "Two final chambers dominate the external test"},
+       {"value": "IRREGULAR_SERIAL", "label_en": "Sigmoidal", "label_tr": "Sigmoidal", "next": "GENUS:Sigmoilina", "annotation": "Chambers change coiling planes producing an S-like/sigmoidal arrangement"},
+       {"value": "OTHER", "label_en": "Simple milioline, without the above specialisations", "label_tr": "Yukarıdaki özelleşmeleri göstermeyen basit milioline form", "next": "GENUS:Miliola"},
+       {"value": "CYCLIC", "label_en": "Early planispiral / peneropline / later uncoiling", "label_tr": "Erken planispiral / peneroplin / daha sonra açılan", "next": "PORC_Q3F", "maps_to": {"CHR_06": "PLANISPIRAL"}}
+     ]},
+    {"id": "PORC_Q3A", "type": "question", "chr_id": "CHR_09", "code": "Q3A",
+     "text_en": "What happens to the adult chambers?",
+     "text_tr": "Erişkin localara ne oluyor?",
+     "answers": [
+       {"value": "NONE", "label_en": "Arrangement remains compact quinqueloculine", "label_tr": "Dizilim kompakt quinqueloculine olarak kalıyor", "next": "PORC_Q3A1"},
+       {"value": "COILED_TO_SERIAL", "label_en": "Later chambers elongate and become partly or completely uncoiled", "label_tr": "Son localar uzuyor ve kısmen veya tamamen açılıyor", "next": "GENUS:Articulina"}
+     ]},
+    {"id": "PORC_Q3A1", "type": "question", "chr_id": "CHR_16", "code": "Q3A-1",
+     "text_en": "What is the aperture like?",
+     "text_tr": "Apertür nasıl?",
+     "answers": [
+       {"value": "TERMINAL", "label_en": "Single terminal aperture, commonly with a simple tooth", "label_tr": "Tek terminal apertür, genellikle basit dişli", "next": "GENUS:Quinqueloculina"},
+       {"value": "MULTIPLE", "label_en": "Apertural end more complex, multiple openings / sieve-like structure", "label_tr": "Apertür bölgesi daha karmaşık, çoklu açıklıklı / elek benzeri", "next": "GENUS:Hauerina", "also_values": ["CRIBRATE"]}
+     ]},
+    {"id": "PORC_Q3B", "type": "question", "chr_id": null, "code": "Q3B",
+     "observation_hint": ["cross-sectional outline"],
+     "text_en": "What is the cross-sectional outline?",
+     "text_tr": "Enine kesit dış şekli nasıl?",
+     "answers": [
+       {"value": "TRIANGULAR", "label_en": "Distinct triangular or subtriangular outline", "label_tr": "Belirgin üçgen veya yarı üçgen", "next": "GENUS:Triloculina", "evidence": ["terminal aperture commonly with tooth"]},
+       {"value": "ROUNDED", "label_en": "More rounded/ovoid outline; chamber margins less angular; apertural configuration modified", "label_tr": "Daha yuvarlak/oval; loca sınırları daha az köşeli; apertür yapısı farklı", "next": "GENUS:Miliolinella"}
+     ]},
+    {"id": "PORC_Q3C", "type": "question", "chr_id": null, "code": "Q3C",
+     "observation_hint": ["final chamber inflation", "CHR_16"],
+     "text_en": "How do the final chambers and aperture look?",
+     "text_tr": "Son localar ve apertür nasıl?",
+     "answers": [
+       {"value": "INFLATED_EMBRACING", "label_en": "Chambers very inflated and strongly embracing; test globular-ovoid", "label_tr": "Localar çok şişkin ve birbirini güçlü sarıyor; kavkı küresel-oval", "next": "GENUS:Pyrgo"},
+       {"value": "MODIFIED_APERTURE", "label_en": "Biloculine but aperture/neck distinctly modified", "label_tr": "Biloculine fakat apertür/boyun belirgin şekilde farklılaşmış", "next": "GENUS:Pyrgoina"}
+     ]},
+    {"id": "PORC_Q3F", "type": "question", "chr_id": "CHR_09", "code": "Q3F",
+     "text_en": "Does the test remain coiled?",
+     "text_tr": "Kavkı sarılı kalıyor mu?",
+     "answers": [
+       {"value": "NONE", "label_en": "Yes — adult remains planispiral", "label_tr": "Evet — erişkin de planispiral", "next": "PORC_Q3F1"},
+       {"value": "COILED_TO_SERIAL", "label_en": "No — adult becomes uncoiled", "label_tr": "Hayır — erişkin evrede sarılım açılıyor", "next": "PORC_Q3F2"}
+     ]},
+    {"id": "PORC_Q3F1", "type": "question", "chr_id": "CHR_16", "code": "Q3F-1",
+     "text_en": "What is the aperture like?",
+     "text_tr": "Apertür nasıl?",
+     "answers": [
+       {"value": "SLIT_LIKE", "label_en": "Simple/slit-like or multiple openings, fan-shaped to discoidal adult morphology", "label_tr": "Basit/yarık biçimli veya çoklu açıklıklar; yelpaze-diskoidal erişkin morfoloji", "next": "GENUS:Peneroplis", "also_values": ["MULTIPLE"]},
+       {"value": "OTHER", "label_en": "Strongly dendritic / branching aperture", "label_tr": "Belirgin dendritik/dallanan apertür", "next": "GENUS:Dendritina"}
+     ]},
+    {"id": "PORC_Q3F2", "type": "question", "chr_id": "CHR_16", "code": "Q3F-2",
+     "text_en": "What is the adult apertural system?",
+     "text_tr": "Erişkin apertür sistemi nasıl?",
+     "answers": [
+       {"value": "TERMINAL", "label_en": "Simple terminal aperture", "label_tr": "Basit terminal apertür", "next": "GENUS:Spirolina"},
+       {"value": "CRIBRATE", "label_en": "Numerous small foramina / cribrate apertural face", "label_tr": "Çok sayıda küçük foramen / elek biçimli apertür yüzeyi", "next": "GENUS:Coscinospira"},
+       {"value": "OTHER", "label_en": "Strongly elongated, articulated, rectilinear adult chambers", "label_tr": "Belirgin uzamış, eklemli, doğrusal erişkin localar", "next": "GENUS:Vertebralina"}
+     ]},
+    {"id": "PORC_Q4", "type": "question", "chr_id": "CHR_06", "code": "Q4",
+     "text_en": "What is the basic coiling of the adult test?",
+     "text_tr": "Erişkin kavkının temel sarılımı nasıl?",
+     "answers": [
+       {"value": "PLANISPIRAL", "label_en": "Predominantly planispiral", "label_tr": "Ağırlıklı planispiral", "next": "PORC_Q4A"},
+       {"value": "STREPTOSPIRAL", "label_en": "Milioline / biloculine / changing coiling planes", "label_tr": "Milioline/biloculine/değişen sarılım düzlemleri", "next": "PORC_Q4B", "also_values": ["IRREGULAR_COILING"]}
+     ]},
+    {"id": "PORC_Q4A", "type": "question", "chr_id": "CHR_11", "code": "Q4A",
+     "text_en": "Are there numerous regular chamberlets?",
+     "text_tr": "Çok sayıda düzenli locacık var mı?",
+     "answers": [
+       {"value": "WELL_DEVELOPED", "label_en": "Yes (test globular / subglobular / ovoid / ellipsoidal / fusiform)", "label_tr": "Evet (kavkı küresel / yarı küresel / ovoid / elipsoidal / fusiform)", "next": "PORC_Q4A2",
+        "annotation": "CANDIDATES: Glomalveolina / Alveolina / Borelis", "also_values": ["PRESENT"]}
+     ]},
+    {"id": "PORC_Q4A2", "type": "question", "chr_id": "CHR_09", "code": "Q4A-2",
+     "text_en": "Examine the earliest visible chambers.",
+     "text_tr": "Görülebilen en erken locaları incele.",
+     "answers": [
+       {"value": "COILED_TO_SERIAL", "label_en": "Early chambers show milioline/triloculine change of coiling planes, followed by planispiral adult growth", "label_tr": "Erken localar milioline/triloculine biçimde sarılım düzlemi değiştiriyor, sonra planispiral büyüme başlıyor", "next": "GENUS:Glomalveolina"},
+       {"value": "NONE", "label_en": "Early and later growth essentially regular planispiral", "label_tr": "Erken ve sonraki büyüme esas olarak düzenli planispiral", "next": "PORC_Q4A3"}
+     ]},
+    {"id": "PORC_Q4A3", "type": "question", "chr_id": "CHR_11", "code": "Q4A-3",
+     "text_en": "In axial/oblique section: is a second smaller tier of chamberlets present between the main chamberlets?",
+     "text_tr": "Aksiyal/eğik kesitte ana locacıkların arasında ikinci, daha küçük locacık sırası var mı?",
+     "section_sensitive": true,
+     "answers": [
+       {"value": "PRESENT", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Borelis",
+        "evidence": ["characteristic preseptal organisation", "locally Y-shaped pattern of septal structures"]},
+       {"value": "ABSENT", "label_en": "No", "label_tr": "Hayır", "next": "GENUS:Alveolina",
+        "evidence": ["typical numerous alveolinid chamberlets", "regular planispiral architecture"]}
+     ]},
+    {"id": "PORC_Q4B", "type": "question", "chr_id": null, "code": "Q4B",
+     "observation_hint": ["adult chamber embracing"],
+     "text_en": "Do two very large embracing adult chambers dominate the test?",
+     "text_tr": "İki çok büyük sarıcı erişkin loca kavkıya hâkim mi?",
+     "answers": [
+       {"value": "YES", "next": "PORC_Q4BF"},
+       {"value": "NO_NOT_CLEAR", "label_en": "No / not clear", "label_tr": "Hayır / belirsiz", "next": "PORC_Q4B1"}
+     ]},
+    {"id": "PORC_Q4BF", "type": "question", "chr_id": "CHR_10", "code": "Q4B-F",
+     "text_en": "Are these chambers strongly and regularly internally subdivided?",
+     "text_tr": "Bu localar yoğun ve düzenli biçimde içten bölünmüş mü?",
+     "answers": [
+       {"value": "SUBDIVIDED", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Fabularia"},
+       {"value": "SIMPLE", "label_en": "No / not clear", "label_tr": "Hayır / belirsiz", "next": "PORC_Q4B1"}
+     ]},
+    {"id": "PORC_Q4B1", "type": "question", "chr_id": null, "code": "Q4B-1",
+     "observation_hint": ["concentric cycles"],
+     "text_en": "Are adult chambers arranged in concentric or strongly embracing cycles?",
+     "text_tr": "Erişkin localar konsantrik veya güçlü sarıcı döngüler oluşturuyor mu?",
+     "answers": [
+       {"value": "YES", "next": "PORC_Q4B2"},
+       {"value": "NO", "next": "PORC_Q4B3"}
+     ]},
+    {"id": "PORC_Q4B2", "type": "question", "chr_id": null, "code": "Q4B-2",
+     "observation_hint": ["chamber embracing degree"],
+     "text_en": "Do adult chambers completely embrace the previous chambers?",
+     "text_tr": "Erişkin localar önceki locaları tamamen sarıyor mu?",
+     "answers": [
+       {"value": "YES", "next": "PORC_Q4B2A"},
+       {"value": "NO_PARTLY", "label_en": "No / only partly embracing", "label_tr": "Hayır / yalnızca kısmen sarıyor", "next": "PORC_Q4B2B"}
+     ]},
+    {"id": "PORC_Q4B2A", "type": "question", "chr_id": "CHR_13", "code": "Q4B-2a",
+     "text_en": "Are low longitudinal partitions present, stopping before reaching the chamber floor?",
+     "text_tr": "Loca tabanına ulaşmadan sonlanan alçak boyuna iç bölmeler var mı?",
+     "answers": [
+       {"value": "OTHER", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Lacazinella", "annotation": "Low longitudinal partitions that stop before the chamber floor"},
+       {"value": "ABSENT", "label_en": "No", "label_tr": "Hayır", "next": "PORC_Q4B3"}
+     ]},
+    {"id": "PORC_Q4B2B", "type": "question", "chr_id": "CHR_14", "code": "Q4B-2b",
+     "text_en": "Are pillars arranged in longitudinal rows, alternating between adjacent rows?",
+     "text_tr": "Pillarlar boyuna sıralar halinde ve komşu sıralarda dönüşümlü mü yerleşiyor?",
+     "answers": [
+       {"value": "PRESENT", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Lacazina"},
+       {"value": "ABSENT", "label_en": "No", "label_tr": "Hayır", "next": "PORC_Q4B3"}
+     ]},
+    {"id": "PORC_Q4B3", "type": "question", "chr_id": "CHR_13", "code": "Q4B-3",
+     "text_en": "Are the chambers subdivided by longitudinal partitions and/or pillars, with the regular alternating Lacazina-type pillar pattern absent?",
+     "text_tr": "Localar boyuna bölmeler ve/veya pillarlarla içten bölünmüş, fakat Lacazina'daki düzenli dönüşümlü pillar dizilimi yok mu?",
+     "answers": [
+       {"value": "OTHER", "label_en": "Yes", "label_tr": "Evet", "next": "GENUS:Pseudolacazina"},
+       {"value": "SPECIALISED", "label_en": "Other specialised internal pattern", "label_tr": "Başka özelleşmiş iç yapı", "next": "PORC_Q4B4"}
+     ]},
+    {"id": "PORC_Q4B4", "type": "question", "chr_id": "CHR_12", "code": "Q4B-4",
+     "text_en": "Where is the internal complexity most pronounced?",
+     "text_tr": "İç karmaşıklık en belirgin olarak nerede gelişmiş?",
+     "answers": [
+       {"value": "COMPLEX", "label_en": "Around embryonic/periembryonic region; conspicuous peripheral development", "label_tr": "Embriyonik/periembriyonik bölgede; belirgin çevresel gelişim", "next": "GENUS:Periloculina"},
+       {"value": "SIMPLE", "label_en": "Comparatively small test, specialised compact internal milioline partitions", "label_tr": "Görece küçük kavkı, kompakt ve özelleşmiş milioline iç bölmeler", "next": "GENUS:Idalina"}
+     ]}
+  ]
+}

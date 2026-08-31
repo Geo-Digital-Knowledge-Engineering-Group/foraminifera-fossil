@@ -1,0 +1,1354 @@
+{
+  "module": "PORCELANEOUS",
+  "genera": [
+    {
+      "genus": "Alveolina",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Test composition = porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "True chambers = present"
+          },
+          {
+            "code": "M3",
+            "text": "Internal subdivision = present"
+          },
+          {
+            "code": "M4",
+            "text": "Adult coiling = planispiral"
+          },
+          {
+            "code": "M5",
+            "text": "Numerous chamberlets = present"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Early growth predominantly regular planispiral"
+          },
+          {
+            "code": "D2",
+            "text": "Alveolinid chamberlet architecture"
+          },
+          {
+            "code": "D3",
+            "text": "Borelis-type secondary chamberlet tier = absent"
+          },
+          {
+            "code": "D4",
+            "text": "Glomalveolina-type early milioline/triloculine stage = absent"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Bilateral symmetry"
+          },
+          {
+            "code": "S2",
+            "text": "Test = globular / ovoid / ellipsoidal / fusiform"
+          },
+          {
+            "code": "S3",
+            "text": "Axial structure compatible"
+          },
+          {
+            "code": "S4",
+            "text": "Basal layer visible"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Adult growth = quinqueloculine"
+          },
+          {
+            "code": "C2",
+            "text": "Adult growth = triloculine"
+          },
+          {
+            "code": "C3",
+            "text": "Chambers internally undivided"
+          },
+          {
+            "code": "C4",
+            "text": "Borelis-type diagnostic secondary chamberlet pattern present"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Glomalveolina",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Internal subdivision present"
+          },
+          {
+            "code": "M4",
+            "text": "Adult growth becomes planispiral"
+          },
+          {
+            "code": "M5",
+            "text": "Numerous chamberlets"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Early/nepionic chambers show milioline/triloculine organisation"
+          },
+          {
+            "code": "D2",
+            "text": "Transition from early changing coiling planes to later planispiral growth"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Small to medium test"
+          },
+          {
+            "code": "S2",
+            "text": "Globular / ovoid morphology"
+          },
+          {
+            "code": "S3",
+            "text": "Bilateral adult architecture"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Entire ontogeny clearly regular planispiral with no early milioline stage in a section where the nepionic region is demonstrably preserved"
+          },
+          {
+            "code": "C2",
+            "text": "No internal subdivision"
+          },
+          {
+            "code": "C3",
+            "text": "Quinqueloculine adult architecture"
+          }
+        ]
+      },
+      "notes": [
+        "Burada çok önemli bir ayrıntı var:",
+        "Erken evre fotoğrafta **görünmüyorsa** C1 uygulanmaz.",
+        "Yalnızca erken evrenin gerçekten kesildiğinden eminsek ve milioline evre yoksa bu negatif kanıt sayılır."
+      ],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Borelis",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Internal subdivision present"
+          },
+          {
+            "code": "M4",
+            "text": "Planispiral architecture"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Main chamberlets accompanied by smaller secondary chamberlets/tier"
+          },
+          {
+            "code": "D2",
+            "text": "Characteristic preseptal organisation"
+          },
+          {
+            "code": "D3",
+            "text": "Characteristic axial septal pattern, where observable"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Spheroidal/subglobular morphology"
+          },
+          {
+            "code": "S2",
+            "text": "Numerous chamberlets"
+          },
+          {
+            "code": "S3",
+            "text": "Bilateral organization"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Glomalveolina-type early milioline/triloculine stage"
+          },
+          {
+            "code": "C2",
+            "text": "Internal subdivisions absent"
+          },
+          {
+            "code": "C3",
+            "text": "Simple milioline chamber arrangement"
+          }
+        ]
+      },
+      "notes": [
+        "Dolayısıyla **Alveolina--Glomalveolina--Borelis** üçlüsü artık yalnızca şekle göre ayrılmıyor."
+      ],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Quinqueloculina",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Internal secondary subdivisions absent"
+          },
+          {
+            "code": "M4",
+            "text": "Quinqueloculine chamber arrangement"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Characteristic five-position chamber arrangement"
+          },
+          {
+            "code": "D2",
+            "text": "Simple terminal aperture commonly bearing tooth"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Compact test"
+          },
+          {
+            "code": "S2",
+            "text": "Chambers remain coiled in adult stage"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Internal chamberlets present"
+          },
+          {
+            "code": "C2",
+            "text": "Adult chambers uncoil strongly"
+          },
+          {
+            "code": "C3",
+            "text": "Triloculine arrangement"
+          },
+          {
+            "code": "C4",
+            "text": "Biloculine arrangement"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Hauerina",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Milioline arrangement"
+          },
+          {
+            "code": "M4",
+            "text": "Internal chamberlets absent"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Complex apertural structure"
+          },
+          {
+            "code": "D2",
+            "text": "Multiple apertural openings / apertural modification"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Quinqueloculine-related architecture"
+          },
+          {
+            "code": "S2",
+            "text": "Compact adult test"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Simple single toothed aperture together with otherwise typical Quinqueloculina architecture"
+          },
+          {
+            "code": "C2",
+            "text": "Internal complex chamberlets"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Articulina",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Early milioline arrangement"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Later chambers become elongated"
+          },
+          {
+            "code": "D2",
+            "text": "Adult test becomes partially/completely uncoiled"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Quinqueloculine early stage"
+          },
+          {
+            "code": "S2",
+            "text": "Elongated adult morphology"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Adult remains compact quinqueloculine"
+          },
+          {
+            "code": "C2",
+            "text": "Numerous internal chamberlets"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Triloculina",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Triloculine arrangement"
+          },
+          {
+            "code": "M4",
+            "text": "Internal subdivision absent"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Three dominant chamber positions"
+          },
+          {
+            "code": "D2",
+            "text": "Triangular/subtriangular section"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Terminal aperture"
+          },
+          {
+            "code": "S2",
+            "text": "Apertural tooth may be present"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Quinqueloculine arrangement"
+          },
+          {
+            "code": "C2",
+            "text": "Biloculine arrangement"
+          },
+          {
+            "code": "C3",
+            "text": "Internal chamberlets"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Miliolinella",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Milioline/triloculine-related arrangement"
+          },
+          {
+            "code": "M4",
+            "text": "Internal subdivisions absent"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Rounded/ovoid section rather than strongly triangular Triloculina morphology"
+          },
+          {
+            "code": "D2",
+            "text": "Characteristic modified apertural morphology"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Compact test"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Strongly diagnostic Triloculina morphology"
+          },
+          {
+            "code": "C2",
+            "text": "Complex internal chamberlets"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Pyrgo",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Biloculine adult arrangement"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Two strongly embracing final chambers"
+          },
+          {
+            "code": "D2",
+            "text": "Inflated globular/ovoid test"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Compact morphology"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Quinqueloculine adult"
+          },
+          {
+            "code": "C2",
+            "text": "Planispiral adult"
+          },
+          {
+            "code": "C3",
+            "text": "Complex internal subdivision"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Pyrgoina",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Biloculine-related architecture"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Modified apertural/neck structure relative to typical Pyrgo"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Inflated test"
+          },
+          {
+            "code": "S2",
+            "text": "Strongly embracing chambers"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Clear quinqueloculine architecture"
+          },
+          {
+            "code": "C2",
+            "text": "Complex chamberlet system"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Sigmoilina",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Internal subdivision absent"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Changing coiling planes produce sigmoidal chamber arrangement"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Elongate/ovoid test"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Stable planispiral growth"
+          },
+          {
+            "code": "C2",
+            "text": "Stable quinqueloculine growth"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Peneroplis",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Planispiral adult growth"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Peneropline planispiral morphology"
+          },
+          {
+            "code": "D2",
+            "text": "Adult remains coiled"
+          },
+          {
+            "code": "D3",
+            "text": "Characteristic apertural system"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Discoidal/fan-shaped morphology"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Adult becomes strongly uniserial"
+          },
+          {
+            "code": "C2",
+            "text": "Milioline chamber arrangement"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Spirolina",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Early planispiral stage"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Adult growth uncoils"
+          },
+          {
+            "code": "D2",
+            "text": "Later chambers form uniserial/rectilinear series"
+          },
+          {
+            "code": "D3",
+            "text": "Relatively simple terminal aperture"
+          }
+        ],
+        "S": [],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Adult remains entirely planispiral"
+          },
+          {
+            "code": "C2",
+            "text": "Cribrate/multiple apertural system characteristic of Coscinospira"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Coscinospira",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Early planispiral growth"
+          },
+          {
+            "code": "M4",
+            "text": "Later uncoiled/uniserial growth"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Numerous apertural foramina"
+          },
+          {
+            "code": "D2",
+            "text": "Cribrate apertural/septal system"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Elongated adult portion"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Simple single terminal aperture"
+          },
+          {
+            "code": "C2",
+            "text": "Adult remains completely planispiral"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Dendritina",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Peneropline morphology"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Distinctive dendritic/branching aperture"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Planispiral/discoidal test"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Simple non-branching aperture"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Vertebralina",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Elongated/articulated test"
+          },
+          {
+            "code": "D2",
+            "text": "Adult growth partly uncoiled/rectilinear"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Milioline early organization"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Compact adult test"
+          },
+          {
+            "code": "C2",
+            "text": "Entirely planispiral adult"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Cornuspira",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Undivided tubular chamber"
+          },
+          {
+            "code": "M3",
+            "text": "Regular planispiral coiling"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "True septa absent"
+          }
+        ],
+        "S": [],
+        "C": [
+          {
+            "code": "C1",
+            "text": "True multichambered test"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Nubecularia",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Tubular/irregular growth"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Irregular attached/encrusting growth"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Substrate attachment"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Regular free planispiral Cornuspira-like tube"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Fabularia",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Complex internal subdivision"
+          },
+          {
+            "code": "M4",
+            "text": "Biloculine-related adult architecture"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Two large embracing adult chambers"
+          },
+          {
+            "code": "D2",
+            "text": "Extensive regular internal subdivision"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Large ovoid/fusiform test"
+          },
+          {
+            "code": "S2",
+            "text": "Dimorphism"
+          },
+          {
+            "code": "S3",
+            "text": "Complex embryonic apparatus"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Simple undivided chambers"
+          },
+          {
+            "code": "C2",
+            "text": "Planispiral alveolinid architecture"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Lacazina",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Complex internally subdivided test"
+          },
+          {
+            "code": "M3",
+            "text": "Adult concentric/monocular chamber cycles"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Longitudinal rows of pillars"
+          },
+          {
+            "code": "D2",
+            "text": "Pillars alternate between adjacent rows"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Large discoidal/ovoid test"
+          },
+          {
+            "code": "S2",
+            "text": "Dimorphism"
+          },
+          {
+            "code": "S3",
+            "text": "Trematophore/cribrate aperture"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Pseudolacazina-type non-alternating longitudinal partition system"
+          },
+          {
+            "code": "C2",
+            "text": "Simple chambers"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Pseudolacazina",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Complex internal subdivision"
+          },
+          {
+            "code": "M4",
+            "text": "Longitudinal partitions and/or supporting pillars"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Lacazina-type regular alternating pillar pattern absent"
+          },
+          {
+            "code": "D2",
+            "text": "Characteristic continuous/longitudinal internal partition system"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Relatively low chambers in Paleogene forms"
+          },
+          {
+            "code": "S2",
+            "text": "Ovoid/large test"
+          },
+          {
+            "code": "S3",
+            "text": "Dimorphism"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Clear Lacazina alternating pillar architecture"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Lacazinella",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Complex internal subdivision"
+          },
+          {
+            "code": "M4",
+            "text": "Adult concentric embracing chambers"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Adult chambers completely embrace earlier chambers"
+          },
+          {
+            "code": "D2",
+            "text": "Low longitudinal partitions present"
+          },
+          {
+            "code": "D3",
+            "text": "Partitions do NOT reach chamber floor"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Ovoid morphology"
+          },
+          {
+            "code": "S2",
+            "text": "Trematophore-related architecture"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Regular Lacazina alternating pillar rows"
+          },
+          {
+            "code": "C2",
+            "text": "Long partitions extending fully to chamber floor"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Periloculina",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Complex multichambered test"
+          },
+          {
+            "code": "M3",
+            "text": "Internal subdivision present"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Strong periembryonic/peripheral chamber development"
+          },
+          {
+            "code": "D2",
+            "text": "Characteristic complex early chamber arrangement"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Complex milioline growth"
+          },
+          {
+            "code": "S2",
+            "text": "Embryonic apparatus clearly developed"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Simple milioline architecture"
+          },
+          {
+            "code": "C2",
+            "text": "Typical planispiral alveolinid architecture"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Idalina",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Complex milioline architecture"
+          },
+          {
+            "code": "M4",
+            "text": "Internal partitions present"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Relatively small compact complex test"
+          },
+          {
+            "code": "D2",
+            "text": "Specialized internal milioline partitions"
+          },
+          {
+            "code": "D3",
+            "text": "Characteristic early/embryonic chamber organisation"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Dimorphism"
+          },
+          {
+            "code": "S2",
+            "text": "Complex aperture"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Alveolina-type planispiral chamberlet system"
+          },
+          {
+            "code": "C2",
+            "text": "Simple undivided milioline chambers"
+          }
+        ]
+      },
+      "notes": [
+        "Burada numara 26 görünmesinin nedeni Miliolayı ayrıca aşağıda vermemiz; toplam hedef hâlâ 25 cins."
+      ],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Miliola",
+      "module": "PORCELANEOUS",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Porcelaneous"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Milioline arrangement"
+          },
+          {
+            "code": "M4",
+            "text": "Internal complex subdivision absent"
+          }
+        ],
+        "D": [],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Relatively simple milioline morphology"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Alveolinid chamberlet architecture"
+          },
+          {
+            "code": "C2",
+            "text": "Strong specialized uncoiling"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    }
+  ]
+}

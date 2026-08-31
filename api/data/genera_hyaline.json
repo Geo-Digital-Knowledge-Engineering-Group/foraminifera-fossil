@@ -1,0 +1,1265 @@
+{
+  "module": "HYALINE",
+  "genera": [
+    {
+      "genus": "Nummulites",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline/perforate test"
+          },
+          {
+            "code": "M2",
+            "text": "multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "planispiral"
+          },
+          {
+            "code": "M4",
+            "text": "nummulitid-type marginal structure"
+          },
+          {
+            "code": "M5",
+            "text": "secondary chamberlets absent"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "generally involute"
+          },
+          {
+            "code": "D2",
+            "text": "well-developed marginal cord"
+          },
+          {
+            "code": "D3",
+            "text": "characteristic septal filaments"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "lenticular/discoidal test"
+          },
+          {
+            "code": "S2",
+            "text": "bilateral symmetry"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "trochospiral architecture"
+          },
+          {
+            "code": "C2",
+            "text": "annular orthophragminid growth"
+          },
+          {
+            "code": "C3",
+            "text": "secondary equatorial chamberlets"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Assilina",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "planispiral"
+          },
+          {
+            "code": "M3",
+            "text": "nummulitid marginal architecture"
+          },
+          {
+            "code": "M4",
+            "text": "secondary chamberlets absent"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "more evolute than typical Nummulites"
+          },
+          {
+            "code": "D2",
+            "text": "earlier whorls clearly exposed"
+          },
+          {
+            "code": "D3",
+            "text": "relatively flatter test"
+          }
+        ],
+        "S": [],
+        "C": [
+          {
+            "code": "C1",
+            "text": "strongly involute thick Nummulites morphology"
+          },
+          {
+            "code": "C2",
+            "text": "very loose Operculina-type coiling"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Operculina",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "planispiral"
+          },
+          {
+            "code": "M3",
+            "text": "nummulitid/operculinid marginal architecture"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "strongly evolute"
+          },
+          {
+            "code": "D2",
+            "text": "thin discoidal test"
+          },
+          {
+            "code": "D3",
+            "text": "loose/open coiling"
+          },
+          {
+            "code": "D4",
+            "text": "rapid whorl expansion"
+          }
+        ],
+        "S": [],
+        "C": [
+          {
+            "code": "C1",
+            "text": "strongly involute test"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Ranikothalia",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "planispiral"
+          },
+          {
+            "code": "M3",
+            "text": "Paleogene larger nummulitid architecture"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "robust lenticular test"
+          },
+          {
+            "code": "D2",
+            "text": "tight/involute coiling"
+          },
+          {
+            "code": "D3",
+            "text": "strong internal pillars"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Paleocene age"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "strongly evolute thin morphology"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Heterostegina",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "planispiral"
+          },
+          {
+            "code": "M3",
+            "text": "secondary subdivision of equatorial chambers"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "equatorial chamberlets present"
+          },
+          {
+            "code": "D2",
+            "text": "developed lateral chamberlet system absent or weak compared with Spiroclypeus"
+          }
+        ],
+        "S": [],
+        "C": [
+          {
+            "code": "C1",
+            "text": "completely undivided equatorial chambers"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Spiroclypeus",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "planispiral"
+          },
+          {
+            "code": "M3",
+            "text": "secondary equatorial chamberlets"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "lateral chamberlets present"
+          },
+          {
+            "code": "D2",
+            "text": "pillars developed"
+          },
+          {
+            "code": "D3",
+            "text": "complex multilayered architecture"
+          }
+        ],
+        "S": [],
+        "C": [
+          {
+            "code": "C1",
+            "text": "no lateral chamber system"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Lockhartia",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "trochospiral"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "conical/conico-lenticular profile"
+          },
+          {
+            "code": "D2",
+            "text": "strong dorsal/ventral asymmetry"
+          },
+          {
+            "code": "D3",
+            "text": "internal pillars"
+          }
+        ],
+        "S": [],
+        "C": []
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Kathina",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "trochospiral"
+          },
+          {
+            "code": "M3",
+            "text": "larger rotaliid architecture"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "compact lenticular test"
+          },
+          {
+            "code": "D2",
+            "text": "strong central/umbilical thickening"
+          },
+          {
+            "code": "D3",
+            "text": "strong pillars"
+          }
+        ],
+        "S": [],
+        "C": []
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Daviesina",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "rotaliid/trochospiral architecture"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "relatively flattened test"
+          },
+          {
+            "code": "D2",
+            "text": "differentiated peripheral internal zone"
+          }
+        ],
+        "S": [],
+        "C": []
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Miscellanea",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "complex larger rotaliid architecture"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "large robust lenticular morphology"
+          },
+          {
+            "code": "D2",
+            "text": "highly developed internal differentiation"
+          },
+          {
+            "code": "D3",
+            "text": "pillars/canal structures"
+          }
+        ],
+        "S": [],
+        "C": []
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Laffitteina",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "trochospiral"
+          },
+          {
+            "code": "M3",
+            "text": "multichambered"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "robust Paleocene rotaliid architecture"
+          },
+          {
+            "code": "D2",
+            "text": "thickened central region"
+          }
+        ],
+        "S": [],
+        "C": []
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Rotalia",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "trochospiral"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "relatively simple biconvex rotaliid morphology"
+          }
+        ],
+        "S": [],
+        "C": []
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Pararotalia",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "trochospiral"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "more angular/peripherally differentiated test than typical Rotalia"
+          }
+        ],
+        "S": [],
+        "C": []
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Cuvillierina",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "trochospiral"
+          },
+          {
+            "code": "M3",
+            "text": "Paleocene rotaliid architecture"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "characteristic peripheral/internal differentiation"
+          }
+        ],
+        "S": [],
+        "C": []
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Ornatorotalia",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "trochospiral"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "conspicuous radial/ornamental surface pattern"
+          }
+        ],
+        "S": [],
+        "C": []
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Granorotalia",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "trochospiral"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "granular/coarsely ornamented surface"
+          },
+          {
+            "code": "D2",
+            "text": "lacks characteristic Ornatorotalia radial ornament"
+          }
+        ],
+        "S": [],
+        "C": []
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Asterocyclina",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "discoidal"
+          },
+          {
+            "code": "M3",
+            "text": "annular equatorial growth"
+          },
+          {
+            "code": "M4",
+            "text": "lateral chambers"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "strong radial rays"
+          },
+          {
+            "code": "D2",
+            "text": "stellate outline"
+          }
+        ],
+        "S": [],
+        "C": []
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Discocyclina",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "discoidal"
+          },
+          {
+            "code": "M3",
+            "text": "annular equatorial layer"
+          },
+          {
+            "code": "M4",
+            "text": "equatorial chamberlets"
+          },
+          {
+            "code": "M5",
+            "text": "lateral chambers"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "annular stolons present"
+          },
+          {
+            "code": "D2",
+            "text": "Discocyclina-type equatorial chamberlets"
+          }
+        ],
+        "S": [],
+        "C": [
+          {
+            "code": "C1",
+            "text": "strong stellate architecture"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Orbitoclypeus",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "discoidal"
+          },
+          {
+            "code": "M3",
+            "text": "annular equatorial growth"
+          },
+          {
+            "code": "M4",
+            "text": "lateral chambers"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "annular stolons absent"
+          },
+          {
+            "code": "D2",
+            "text": "Orbitoclypeus-type equatorial chamberlets"
+          },
+          {
+            "code": "D3",
+            "text": "characteristic embryonic apparatus"
+          }
+        ],
+        "S": [],
+        "C": []
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Nemkovella",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "discoidal"
+          },
+          {
+            "code": "M3",
+            "text": "annular growth"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "annular stolons absent"
+          },
+          {
+            "code": "D2",
+            "text": "Nemkovella-type equatorial chamberlets"
+          },
+          {
+            "code": "D3",
+            "text": "characteristic embryonic apparatus"
+          }
+        ],
+        "S": [],
+        "C": []
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Lenticulina",
+      "module": "HYALINE",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "hyaline"
+          },
+          {
+            "code": "M2",
+            "text": "planispiral"
+          },
+          {
+            "code": "M3",
+            "text": "lenticular"
+          },
+          {
+            "code": "M4",
+            "text": "simple chambers"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "no nummulitid marginal cord"
+          },
+          {
+            "code": "D2",
+            "text": "no developed nummulitid canal system"
+          },
+          {
+            "code": "D3",
+            "text": "no secondary chamberlets"
+          }
+        ],
+        "S": [],
+        "C": []
+      },
+      "notes": [],
+      "closest_comparisons": []
+    },
+    {
+      "genus": "Palaeonummulites",
+      "module": "HYALINE",
+      "variant": "extended_nummulitid",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Hyaline / finely perforate calcitic test"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Planispiral"
+          },
+          {
+            "code": "M4",
+            "text": "Involute coiling"
+          },
+          {
+            "code": "M5",
+            "text": "Secondary chamberlets absent"
+          },
+          {
+            "code": "M6",
+            "text": "Nummulitid-type marginal structure present"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Test semi-compressed to globular"
+          },
+          {
+            "code": "D2",
+            "text": "Spire tightly to moderately tightly coiled"
+          },
+          {
+            "code": "D3",
+            "text": "Relatively few whorls; generally no more than 4--5 in the A-form"
+          },
+          {
+            "code": "D4",
+            "text": "Chambers may reach approximately twice their length in height in equatorial section"
+          },
+          {
+            "code": "D5",
+            "text": "Primary septa and septal filaments present"
+          },
+          {
+            "code": "D6",
+            "text": "Marginal cord only finely to moderately developed"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Septal sutures radial to sigmoid"
+          },
+          {
+            "code": "S2",
+            "text": "Comparatively simple early nummulitid internal architecture"
+          },
+          {
+            "code": "S3",
+            "text": "Marginal cord thinner than in strongly cordate Paleocene genera"
+          },
+          {
+            "code": "S4",
+            "text": "Late Paleocene--Eocene occurrence compatible with genus"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Quasi-evolute/subevolute adult architecture"
+          },
+          {
+            "code": "C2",
+            "text": "Exceptionally thick or massive marginal cord"
+          },
+          {
+            "code": "C3",
+            "text": "Coarse vertical canal system characteristic of strongly cordate forms"
+          },
+          {
+            "code": "C4",
+            "text": "Strongly evolute, loosely coiled Operculina-type morphology"
+          },
+          {
+            "code": "C5",
+            "text": "Secondary equatorial chamberlets present"
+          }
+        ]
+      },
+      "notes": [],
+      "closest_comparisons": [
+        "Nummulites",
+        "Ranikothalia",
+        "Nummulitoides"
+      ],
+      "best_differentiating_observation": "A relatively simple **involute + tight/moderately tight coil + fine/moderate marginal cord** favors *Palaeonummulites* over the massively cordate Paleocene genera.",
+      "section_note": null
+    },
+    {
+      "genus": "Nummulitoides",
+      "module": "HYALINE",
+      "variant": "extended_nummulitid",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Hyaline / finely perforate calcitic test"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Planispiral"
+          },
+          {
+            "code": "M4",
+            "text": "Secondary chamberlets absent"
+          },
+          {
+            "code": "M5",
+            "text": "Large compressed/discoidal nummulitid test"
+          },
+          {
+            "code": "M6",
+            "text": "Thick marginal cord present"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Adult test quasi-evolute to subevolute"
+          },
+          {
+            "code": "D2",
+            "text": "Spiral laminae clasp mainly the marginal cord of the preceding whorl rather than completely enclosing earlier whorls"
+          },
+          {
+            "code": "D3",
+            "text": "Spire moderate to lax"
+          },
+          {
+            "code": "D4",
+            "text": "Marginal cord thick and massive"
+          },
+          {
+            "code": "D5",
+            "text": "Ramifying marginal canals present"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "B-form may reach approximately 1 cm diameter"
+          },
+          {
+            "code": "S2",
+            "text": "Wall relatively thick and finely perforate"
+          },
+          {
+            "code": "S3",
+            "text": "Compressed discoidal morphology"
+          },
+          {
+            "code": "S4",
+            "text": "Late Paleocene--Early Eocene range compatible"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Fully involute architecture throughout"
+          },
+          {
+            "code": "C2",
+            "text": "Completely evolute adult whorls with no clasping of the previous marginal cord"
+          },
+          {
+            "code": "C3",
+            "text": "Fine/weak marginal cord"
+          },
+          {
+            "code": "C4",
+            "text": "Strong secondary chamberlet system"
+          },
+          {
+            "code": "C5",
+            "text": "Simple Lenticulina-type architecture"
+          }
+        ]
+      },
+      "notes": [
+        "massive marginal cord + quasi-/subevolute adult coiling",
+        "This separates *Nummulitoides* especially from fully involute *Ranikothalia*."
+      ],
+      "closest_comparisons": [
+        "Ranikothalia",
+        "Assilina",
+        "Chordoperculinoides"
+      ],
+      "best_differentiating_observation": "The most useful combination is:",
+      "section_note": "Where this distinction is critical, both axial and equatorial information may be needed; the literature specifically warns that these early nummulitid genera can be misidentified when only one section orientation is available."
+    },
+    {
+      "genus": "Planocamerinoides",
+      "module": "HYALINE",
+      "variant": "extended_nummulitid",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Hyaline / perforate calcitic test"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Planispiral"
+          },
+          {
+            "code": "M4",
+            "text": "Compressed test"
+          },
+          {
+            "code": "M5",
+            "text": "Secondary chamberlets absent"
+          },
+          {
+            "code": "M6",
+            "text": "Nummulitid marginal structure present"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Spire tightly and uniformly coiled"
+          },
+          {
+            "code": "D2",
+            "text": "Very low opening rate; less than approximately 1.5× between successive whorls"
+          },
+          {
+            "code": "D3",
+            "text": "Whorls comparatively numerous"
+          },
+          {
+            "code": "D4",
+            "text": "Quasi-evolute architecture"
+          },
+          {
+            "code": "D5",
+            "text": "Chambers regular and higher than long"
+          },
+          {
+            "code": "D6",
+            "text": "Marginal cord finely developed and relatively thin"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Inflated polar region may be present"
+          },
+          {
+            "code": "S2",
+            "text": "Central depression may be marked"
+          },
+          {
+            "code": "S3",
+            "text": "Test commonly lenticular/compressed"
+          },
+          {
+            "code": "S4",
+            "text": "Marginal cord generally less than about one-quarter chamber height"
+          },
+          {
+            "code": "S5",
+            "text": "Late Paleocene--Middle Eocene range compatible"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Strongly involute architecture"
+          },
+          {
+            "code": "C2",
+            "text": "Very lax/open Operculina-type spire"
+          },
+          {
+            "code": "C3",
+            "text": "Exceptionally massive marginal cord"
+          },
+          {
+            "code": "C4",
+            "text": "Coarse vertical canal system"
+          },
+          {
+            "code": "C5",
+            "text": "Secondary chamberlets present"
+          }
+        ]
+      },
+      "notes": [
+        "compressed test + very tight uniform spire + quasi-evolute lamina + thin marginal cord",
+        "This separates *Planocamerinoides* from more openly coiled *Operculina/Assilina* and from involute *Palaeonummulites*."
+      ],
+      "closest_comparisons": [
+        "Assilina",
+        "Operculina",
+        "Palaeonummulites"
+      ],
+      "best_differentiating_observation": "The strongest combination is:",
+      "section_note": null
+    },
+    {
+      "genus": "Chordoperculinoides",
+      "module": "HYALINE",
+      "variant": "extended_nummulitid",
+      "rules": {
+        "M": [
+          {
+            "code": "M1",
+            "text": "Hyaline / finely perforate calcitic test"
+          },
+          {
+            "code": "M2",
+            "text": "Multichambered"
+          },
+          {
+            "code": "M3",
+            "text": "Planispiral"
+          },
+          {
+            "code": "M4",
+            "text": "Involute"
+          },
+          {
+            "code": "M5",
+            "text": "Secondary chamberlets absent"
+          },
+          {
+            "code": "M6",
+            "text": "Massive marginal cord present"
+          }
+        ],
+        "D": [
+          {
+            "code": "D1",
+            "text": "Very thick/massive marginal cord"
+          },
+          {
+            "code": "D2",
+            "text": "Thick, coarse vertical canals"
+          },
+          {
+            "code": "D3",
+            "text": "Ramifying marginal canals"
+          },
+          {
+            "code": "D4",
+            "text": "Strong septal canals connected to the marginal canal system"
+          },
+          {
+            "code": "D5",
+            "text": "Moderately tight coiling"
+          },
+          {
+            "code": "D6",
+            "text": "Chambers become distinctly higher than long"
+          }
+        ],
+        "S": [
+          {
+            "code": "S1",
+            "text": "Large test; B-form may exceed 1 cm"
+          },
+          {
+            "code": "S2",
+            "text": "Semi-compressed morphology"
+          },
+          {
+            "code": "S3",
+            "text": "Fine perforation of wall"
+          },
+          {
+            "code": "S4",
+            "text": "Strong peripheral canal development"
+          },
+          {
+            "code": "S5",
+            "text": "Late Paleocene occurrence strongly compatible"
+          }
+        ],
+        "C": [
+          {
+            "code": "C1",
+            "text": "Quasi-evolute or subevolute adult growth"
+          },
+          {
+            "code": "C2",
+            "text": "Thin/fine marginal cord"
+          },
+          {
+            "code": "C3",
+            "text": "Absence of coarse vertical canals where these are clearly observable"
+          },
+          {
+            "code": "C4",
+            "text": "Evolute Operculina/Assilina-type architecture"
+          },
+          {
+            "code": "C5",
+            "text": "Secondary equatorial chamberlets"
+          }
+        ]
+      },
+      "notes": [
+        "involute test + massive marginal cord + coarse vertical canals",
+        "Chordoperculinoides* differs especially from *Nummulitoides* because the latter becomes quasi-/subevolute, whereas *Chordoperculinoides* remains involute."
+      ],
+      "closest_comparisons": [
+        "Ranikothalia",
+        "Nummulitoides",
+        "Palaeonummulites"
+      ],
+      "best_differentiating_observation": "The strongest diagnostic combination is:",
+      "section_note": "Reliable separation from *Ranikothalia* and *Nummulitoides* may require axial as well as equatorial information; diagnosis should not be forced from a single unsuitable random section."
+    }
+  ]
+}
