@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Geology from "./pages/Geology";
 import Fossils from "./pages/Fossils";
 import Contact from "./pages/Contact";
+import Vlm from "./pages/Vlm";
 
 import "./styles/global.css";
 
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Navigate to="/tani" replace />} />
             <Route path="/tani" element={<Fossils />} />
+            <Route path="/vlm" element={<Vlm />} />
             <Route path="/hakkinda" element={<About />} />
             <Route path="/jeoloji" element={<Geology />} />
             <Route path="/iletisim" element={<Contact />} />
