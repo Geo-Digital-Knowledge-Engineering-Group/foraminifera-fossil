@@ -24,7 +24,7 @@ function Footer() {
         </div>
 
         <div style={{ textAlign: "center", color: "var(--color-text-muted)", fontSize: "11px", fontStyle: "italic", marginTop: "8px", borderTop: "1px solid var(--color-border)", paddingTop: "8px" }}>
-          <strong>Disclaimer:</strong> Always verify the results before use. This is a teaching and decision-support tool, not an official taxonomic determination.
+          <strong>Uyarı:</strong> Sonuçları kullanmadan önce daima doğrulayın. Bu bir eğitim ve karar-destek aracıdır, resmi bir taksonomik teşhis değildir.
         </div>
         
       </div>

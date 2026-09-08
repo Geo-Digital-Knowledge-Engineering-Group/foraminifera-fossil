@@ -386,7 +386,7 @@ function ResultCard({ result, onReset, onBack }) {
       )}
 
       <div className="flag-warning" style={{ background: "#fff3cd", color: "#856404", border: "1px solid #ffeeba", marginTop: "12px", fontSize: "13px" }}>
-        <strong>Disclaimer:</strong> Always verify the results before use. This is a teaching and decision-support tool, not an official taxonomic determination.
+        <strong>Uyarı:</strong> Sonuçları kullanmadan önce daima doğrulayın. Bu bir eğitim ve karar-destek aracıdır, resmi bir taksonomik teşhis değildir.
       </div>
 
       <div className="rules-section">
@@ -629,7 +629,7 @@ function ScoreResult({ data }) {
       </div>
 
       <div className="confidence-note" style={{ background: "#fff3cd", color: "#856404", border: "1px solid #ffeeba", padding: "8px 12px", borderRadius: "6px", marginBottom: "12px", fontSize: "13px", marginTop: "12px" }}>
-        <strong>Disclaimer:</strong> Always verify the results before use. This is a teaching and decision-support tool, not an official taxonomic determination.
+        <strong>Uyarı:</strong> Sonuçları kullanmadan önce daima doğrulayın. Bu bir eğitim ve karar-destek aracıdır, resmi bir taksonomik teşhis değildir.
       </div>
 
       {confidenceNote && <div className="confidence-note">{confidenceNote}</div>}
