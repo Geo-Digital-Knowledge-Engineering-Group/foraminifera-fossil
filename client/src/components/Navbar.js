@@ -37,6 +37,7 @@ function Navbar() {
 
         <nav className={`navbar-menu ${isMenuOpen ? "navbar-menu-open" : ""}`} style={{ zIndex: 1000 }}>
           <Link to="/tani" onClick={handleLinkClick} style={{ fontWeight: 'bold', color: location.pathname === '/tani' ? 'var(--color-primary)' : 'var(--color-text)' }}>Taksonomi Karar Destek</Link>
+          <Link to="/vlm" onClick={handleLinkClick} style={{ color: location.pathname === '/vlm' ? 'var(--color-primary)' : 'var(--color-text)' }}>VLM Gözlem</Link>
           <Link to="/hakkinda" onClick={handleLinkClick} style={{ color: location.pathname === '/hakkinda' ? 'var(--color-primary)' : 'var(--color-text)' }}>Veriseti ve Hakkında</Link>
           <Link to="/jeoloji" onClick={handleLinkClick} style={{ color: location.pathname === '/jeoloji' ? 'var(--color-primary)' : 'var(--color-text)' }}>Jeolojik Bağlam</Link>
           <Link to="/iletisim" onClick={handleLinkClick} style={{ color: location.pathname === '/iletisim' ? 'var(--color-primary)' : 'var(--color-text)' }}>İletişim</Link>

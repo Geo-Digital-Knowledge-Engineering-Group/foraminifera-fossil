@@ -385,6 +385,10 @@ function ResultCard({ result, onReset, onBack }) {
         <div className="flag-warning">⚠️ Taksonomik inceleme gerekli</div>
       )}
 
+      <div className="flag-warning" style={{ background: "#fff3cd", color: "#856404", border: "1px solid #ffeeba", marginTop: "12px", fontSize: "13px" }}>
+        <strong>Disclaimer:</strong> Always verify the results before use. This is a teaching and decision-support tool, not an official taxonomic determination.
+      </div>
+
       <div className="rules-section">
         {Object.entries(rules).map(([level, items]) =>
           !items || items.length === 0 ? null : (
@@ -622,6 +626,10 @@ function ScoreResult({ data }) {
       >
         <strong>{meta.label || status}</strong>
         {identification && <span className="score-id-name"> — <em>{identification}</em></span>}
+      </div>
+
+      <div className="confidence-note" style={{ background: "#fff3cd", color: "#856404", border: "1px solid #ffeeba", padding: "8px 12px", borderRadius: "6px", marginBottom: "12px", fontSize: "13px", marginTop: "12px" }}>
+        <strong>Disclaimer:</strong> Always verify the results before use. This is a teaching and decision-support tool, not an official taxonomic determination.
       </div>
 
       {confidenceNote && <div className="confidence-note">{confidenceNote}</div>}
