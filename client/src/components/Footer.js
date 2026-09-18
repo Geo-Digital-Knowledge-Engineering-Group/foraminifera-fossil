@@ -1,31 +1,38 @@
-import "../styles/components/footer.css";
+import React from "react";
 import logo from "../assets/images/logo.png";
 
 function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <footer className="site-footer" style={{ borderTop: "1px solid var(--color-border)", backgroundColor: "var(--color-sap-bg)", color: "var(--color-text)", padding: "var(--spacing-medium)" }}>
-      <div className="footer-container" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "12px", maxWidth: "var(--page-max-width)", margin: "0 auto", fontSize: "12px", padding: 0, textAlign: "center" }}>
+    <footer className="site-footer" style={{ backgroundColor: '#dcdeda', borderTop: '1px solid #c8d0cc', padding: '15px 30px', marginTop: 'auto' }}>
+      <div className="footer-container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', maxWidth: '1400px', margin: '0 auto', flexWrap: 'wrap', gap: '15px' }}>
         
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: "16px", flexWrap: "wrap", textAlign: "center" }}>
-          <strong style={{ color: "var(--color-primary)", fontSize: "13px" }}>Foraminifera Karar Destek Sistemi</strong>
-          
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <img src={logo} alt="GeoKnow Logo" style={{ height: "20px" }} />
-            <a href="https://avesis.ogu.edu.tr/arastirma-grubu/geoknow" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-text)", textDecoration: "none", fontWeight: "bold" }}>
-              GeoKnow Araştırma Grubu
-            </a>
-          </div>
-
-          <span style={{ color: "var(--color-border)" }}>|</span>
-          <span style={{ color: "var(--color-text-muted)" }}>© {currentYear} Tüm hakları saklıdır.</span>
+        {/* LEFT TITLE */}
+        <div className="footer-left">
+          <span style={{ fontSize: '13px', fontWeight: 'bold', color: '#4a514c' }}>
+            Foraminifera Karar Destek Sistemi
+          </span>
         </div>
 
-        <span style={{ color: "var(--color-text-muted)", fontSize: "11px", fontStyle: "italic" }}>
-          <strong>Uyarı:</strong> Sonuçları kullanmadan önce daima doğrulayın. Bu bir eğitim ve karar-destek aracıdır, resmi bir taksonomik teşhis değildir.
-        </span>
-        
+        {/* RIGHT INFO (LOGO, GROUP & COPYRIGHT) */}
+        <div className="footer-right" style={{ display: 'flex', alignItems: 'center', gap: '15px', flexWrap: 'wrap' }}>
+          <img 
+            src={logo} 
+            alt="GeoKnow Logo" 
+            style={{ height: '30px', objectFit: 'contain' }} 
+          />
+          <span style={{ fontSize: '12px', fontWeight: 'bold', color: '#1a2c24' }}>
+            GeoKnow Araştırma Grubu
+          </span>
+          <span style={{ color: '#888' }}>|</span>
+          <span style={{ fontSize: '12px', color: '#333' }}>
+            © 2026 Tüm hakları saklıdır.
+          </span>
+          <span style={{ color: '#888' }}>|</span>
+          <strong style={{ color: '#555', fontSize: '12px' }}>
+            Uyarı: Sonuçları kullanmadan önce daima doğrulayın. Bu bir eğitim ve karar-destek aracıdır, resmi bir taksonomik teşhis değildir.
+          </strong>
+        </div>
+
       </div>
     </footer>
   );

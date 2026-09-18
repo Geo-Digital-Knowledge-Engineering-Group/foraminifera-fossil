@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "../styles/pages/fossils.css";
 import ceratiteIcon from "../assets/johnny-automatic-ceratite.svg";
 import foraminiferaIcon from "../assets/foraminifera.svg";
+import TaxonProfileCard from "../components/TaxonProfileCard";
 
 const API = process.env.REACT_APP_API_URL + "/api/diagnose";
 
@@ -424,6 +425,8 @@ function ResultCard({ result, onReset, onBack }) {
         </div>
       )}
 
+      <TaxonProfileCard scientificName={name} />
+
       <div className="result-actions">
         <button className="nav-btn back-btn" onClick={onBack}>← Geri</button>
         <button className="nav-btn reset-btn" onClick={onReset}>↺ Yeniden Başla</button>
@@ -636,6 +639,8 @@ function ScoreResult({ data }) {
       <div className="obs-count">
         Değerlendirilen gözlem: <strong>{observedCharacterCount}</strong>
       </div>
+
+      {identification && <TaxonProfileCard scientificName={identification} />}
 
       {ranking.length > 0 && (
         <div className="ranking-section">

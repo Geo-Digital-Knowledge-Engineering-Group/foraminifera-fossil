@@ -100,6 +100,8 @@ async function step1_createConstraints(session) {
     "CREATE CONSTRAINT obs_name IF NOT EXISTS FOR (o:ObservationState) REQUIRE o.name IS UNIQUE",
     "CREATE CONSTRAINT q_id IF NOT EXISTS FOR (q:Question) REQUIRE q.id IS UNIQUE",
     "CREATE CONSTRAINT outcome_id IF NOT EXISTS FOR (o:Outcome) REQUIRE o.id IS UNIQUE",
+    "CREATE CONSTRAINT taxon_profile_key IF NOT EXISTS FOR (tp:TaxonProfile) REQUIRE tp.key IS UNIQUE",
+    "CREATE CONSTRAINT worms_cache_key IF NOT EXISTS FOR (wc:WormsCache) REQUIRE wc.key IS UNIQUE",
   ];
   for (const c of constraints) {
     await session.run(c);
@@ -441,6 +443,74 @@ async function step10_createRuleMappings(session) {
   await runBatch(session, stmts, "KuralEslemeleri");
 }
 
+async function step11_createTaxonProfiles(session) {
+  console.log("\n[11] TaxonProfile kayitlari yukleniyor...");
+
+  let taxonEnvData;
+  try {
+    taxonEnvData = loadJSON("taxon_environment.json");
+  } catch (err) {
+    console.log("  taxon_environment.json bulunamadi, adim atlandi.");
+    return;
+  }
+
+  const stmts = [];
+
+  for (const entry of taxonEnvData) {
+    const key = entry.scientificName.toLowerCase().trim();
+    const normalizedName = key;
+
+    // Create TaxonProfile node
+    const setProps = [
+      "tp.scientificName = $scientificName",
+      "tp.normalizedName = $normalizedName",
+      "tp.rank = $rank",
+      "tp.parentGenus = $parentGenus",
+      "tp.depthTextTr = $depthTextTr",
+      "tp.habitatTextTr = $habitatTextTr",
+      "tp.sourceLabel = $sourceLabel",
+    ];
+    const params = {
+      key,
+      scientificName: entry.scientificName,
+      normalizedName,
+      rank: entry.rank,
+      parentGenus: entry.parentGenus,
+      depthTextTr: entry.depthTextTr || "",
+      habitatTextTr: entry.habitatTextTr || "",
+      sourceLabel: entry.sourceLabel || "",
+    };
+
+    if (entry.taxonomicReviewRequired) {
+      setProps.push("tp.taxonomicReviewRequired = true");
+    }
+
+    stmts.push({
+      cypher: `MERGE (tp:TaxonProfile {key: $key}) SET ${setProps.join(", ")}`,
+      params,
+    });
+
+    // Conditionally create relationships to existing Genus nodes
+    if (entry.rank === "SPECIES") {
+      // Link species profile to parent genus if genus exists in ontology
+      stmts.push({
+        cypher: `MATCH (g:Genus {name: $parentGenus}), (tp:TaxonProfile {key: $key})
+                 MERGE (g)-[:HAS_REFERENCE_SPECIES]->(tp)`,
+        params: { parentGenus: entry.parentGenus, key },
+      });
+    } else if (entry.rank === "GENUS") {
+      // Link genus environment profile to genus if it exists in ontology
+      stmts.push({
+        cypher: `MATCH (g:Genus {name: $parentGenus}), (tp:TaxonProfile {key: $key})
+                 MERGE (g)-[:HAS_ENVIRONMENT_PROFILE]->(tp)`,
+        params: { parentGenus: entry.parentGenus, key },
+      });
+    }
+  }
+
+  await runBatch(session, stmts, "TaxonProfiller");
+}
+
 // ── Verification ────────────────────────────────────────────────────────
 async function verify(session) {
   console.log("\n[✓] DOGRULAMA SORGULARI");
@@ -459,6 +529,7 @@ async function verify(session) {
     },
     { label: "Question", cypher: "MATCH (n:Question) RETURN count(n) AS c" },
     { label: "Outcome", cypher: "MATCH (n:Outcome) RETURN count(n) AS c" },
+    { label: "TaxonProfile", cypher: "MATCH (n:TaxonProfile) RETURN count(n) AS c" },
   ];
 
   const expected = {
@@ -468,6 +539,7 @@ async function verify(session) {
     Status: 5,
     ObservationState: 4,
     Question: 78,
+    TaxonProfile: 18,
   };
 
   let allOk = true;
@@ -514,6 +586,14 @@ async function verify(session) {
     {
       label: "REFERS_TO",
       cypher: "MATCH ()-[r:REFERS_TO]->() RETURN count(r) AS c",
+    },
+    {
+      label: "HAS_REFERENCE_SPECIES",
+      cypher: "MATCH ()-[r:HAS_REFERENCE_SPECIES]->() RETURN count(r) AS c",
+    },
+    {
+      label: "HAS_ENVIRONMENT_PROFILE",
+      cypher: "MATCH ()-[r:HAS_ENVIRONMENT_PROFILE]->() RETURN count(r) AS c",
     },
   ];
 
@@ -593,6 +673,7 @@ async function main() {
     await step8_createComparisons(session);
     await step9_createDecisionTrees(session);
     await step10_createRuleMappings(session);
+    await step11_createTaxonProfiles(session);
 
     await verify(session);
 
