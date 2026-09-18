@@ -1,0 +1,335 @@
+/* ─── TAXON PROFILE CARD ────────────────────────────────────────────────── */
+
+.taxon-card {
+  margin-top: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+  overflow: hidden;
+}
+
+.taxon-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--color-sap-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.taxon-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.taxon-card-title em {
+  font-style: italic;
+  color: var(--color-primary);
+}
+
+/* ─── Availability badges ──────────────────────────────────────────────── */
+
+.taxon-availability {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.avail-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.avail-ok {
+  background: #d4edda;
+  color: #1a7a1a;
+}
+
+.avail-warn {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.avail-off {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+/* ─── Warnings ─────────────────────────────────────────────────────────── */
+
+.taxon-warnings {
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.taxon-warning-item {
+  font-size: 13px;
+  color: #856404;
+  background: #fffdf5;
+  padding: 6px 10px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.taxon-warning-item:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Section (collapsible) ────────────────────────────────────────────── */
+
+.taxon-section {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.taxon-section:last-child {
+  border-bottom: none;
+}
+
+.taxon-section-title {
+  display: block;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+  cursor: pointer;
+  user-select: none;
+  background: var(--color-surface);
+  transition: background 0.15s;
+}
+
+.taxon-section-title:hover {
+  background: var(--color-sap-bg);
+}
+
+.taxon-section-body {
+  padding: 0 16px 12px;
+}
+
+/* ─── Table ────────────────────────────────────────────────────────────── */
+
+.taxon-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.taxon-table td {
+  padding: 5px 0;
+  vertical-align: top;
+}
+
+.taxon-field-label {
+  width: 140px;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+  padding-right: 12px;
+}
+
+.taxon-field-value {
+  color: var(--color-text);
+}
+
+.taxon-no-data {
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.taxon-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.taxon-link:hover {
+  text-decoration: underline;
+  color: var(--color-primary-hover);
+}
+
+/* ─── Status badge ─────────────────────────────────────────────────────── */
+
+.status-badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status-accepted {
+  background: #d4edda;
+  color: #1a7a1a;
+}
+
+.status-unaccepted {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* ─── Boolean values ───────────────────────────────────────────────────── */
+
+.bool-yes {
+  color: #1a7a1a;
+  font-weight: 500;
+}
+
+.bool-no {
+  color: #721c24;
+  font-weight: 500;
+}
+
+/* ─── Info notice ──────────────────────────────────────────────────────── */
+
+.taxon-info-notice {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  padding: 8px 0;
+  line-height: 1.5;
+}
+
+/* ─── Skeleton loading ─────────────────────────────────────────────────── */
+
+.taxon-skeleton {
+  padding: 16px;
+}
+
+.skeleton-line {
+  height: 12px;
+  background: linear-gradient(90deg, #e2e8f0 25%, #f1f5f9 50%, #e2e8f0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.skeleton-line:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes skeleton-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ─── Local profile items ──────────────────────────────────────────────── */
+
+.local-profile-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.local-profile-item:last-child {
+  border-bottom: none;
+}
+
+.local-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.local-profile-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.rank-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 4px;
+}
+
+.rank-species {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.rank-genus {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.review-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 4px;
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.local-profile-fields {
+  margin-left: 2px;
+}
+
+.local-field {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.local-field-label {
+  font-weight: 500;
+  color: var(--color-text-muted);
+  margin-right: 4px;
+}
+
+.local-field-value {
+  color: var(--color-text);
+}
+
+.local-source {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.species-generalization-warning {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #856404;
+  background: #fffdf5;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border-left: 3px solid #ffc107;
+  line-height: 1.5;
+}
+
+/* ─── Responsive ───────────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .taxon-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .taxon-field-label {
+    width: 110px;
+    font-size: 12px;
+  }
+
+  .taxon-field-value {
+    font-size: 12px;
+  }
+
+  .local-profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

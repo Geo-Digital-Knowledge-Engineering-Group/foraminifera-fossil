@@ -1,0 +1,147 @@
+[
+  {
+    "scientificName": "Karsella hottingeri",
+    "rank": "SPECIES",
+    "parentGenus": "Karsella",
+    "depthTextTr": "Sığ denizel ortam",
+    "habitatTextTr": "Sıcak ve sığ kıyı suları",
+    "sourceLabel": "Proje veri seti – Excel Sayfa 10, literatür derlemesi"
+  },
+  {
+    "scientificName": "Pseudolacazina oeztemueri",
+    "rank": "SPECIES",
+    "parentGenus": "Pseudolacazina",
+    "depthTextTr": "Çok sığ ile sığ su denizel ortamı",
+    "habitatTextTr": "Kırmızı ve yeşil alglerle birlikte deniz tabanında yaşamıştır.",
+    "sourceLabel": "Proje veri seti – Excel Sayfa 10, literatür derlemesi"
+  },
+  {
+    "scientificName": "Alveolina haymanaensis",
+    "rank": "SPECIES",
+    "parentGenus": "Alveolina",
+    "depthTextTr": "Sığ–çok sığ denizel bölge, iç rampa",
+    "habitatTextTr": "Okyanusların sığ kesimlerinde tabana tutunarak yaşayan, sıcak ve güneşli sahil ekosistemleri.",
+    "sourceLabel": "Proje veri seti – Excel Sayfa 10, literatür derlemesi"
+  },
+  {
+    "scientificName": "Ranikothalia polatliensis",
+    "rank": "SPECIES",
+    "parentGenus": "Ranikothalia",
+    "depthTextTr": "Karadan denize geçişi temsil eden, kıyı çizgisine son derece yakın çok sığ ortam",
+    "habitatTextTr": "Akarsuların denize döküldüğü deltaların hemen önündeki çok sığ ve sıcak okyanus kıyıları.",
+    "sourceLabel": "Proje veri seti – Excel Sayfa 10, literatür derlemesi"
+  },
+  {
+    "scientificName": "Laffitteina erki",
+    "rank": "SPECIES",
+    "parentGenus": "Laffitteina",
+    "depthTextTr": "Sığ su denizel ortamı",
+    "habitatTextTr": "Algler ve diğer sığ su canlılarıyla birlikte, güneş ışığının deniz tabanına rahatça ulaştığı sıcak, berrak ve sakin okyanus suları.",
+    "sourceLabel": "Proje veri seti – Excel Sayfa 10, literatür derlemesi"
+  },
+  {
+    "scientificName": "Discocyclina seunesi",
+    "rank": "SPECIES",
+    "parentGenus": "Discocyclina",
+    "depthTextTr": "Çok sığ su denizel ortamı",
+    "habitatTextTr": "Deniz tabanında, diğer çok sığ su canlılarıyla birlikte sıcak okyanus kıyı ekosistemleri.",
+    "sourceLabel": "Proje veri seti – Excel Sayfa 10, literatür derlemesi"
+  },
+  {
+    "scientificName": "Orbitoclypeus haymanaensis",
+    "rank": "SPECIES",
+    "parentGenus": "Orbitoclypeus",
+    "depthTextTr": "Sığ deniz",
+    "habitatTextTr": "İlerleyen deniz suyunun oluşturduğu masif kireçtaşı kayalıklarının altında yer alan kırıntılı ve karbonatlı denizel kıyı ortamı.",
+    "sourceLabel": "Proje veri seti – Excel Sayfa 10, literatür derlemesi"
+  },
+  {
+    "scientificName": "Orbitolites",
+    "rank": "GENUS",
+    "parentGenus": "Orbitolites",
+    "depthTextTr": "Çok sığ ile sığ deniz",
+    "habitatTextTr": "Normal tuzluluğa sahip kısıtlı şelf, iç rampa ve sığ denizel karbonat platformu çökelleri.",
+    "sourceLabel": "Proje ortam veri tablosu"
+  },
+  {
+    "scientificName": "Opertorbitolites",
+    "rank": "GENUS",
+    "parentGenus": "Opertorbitolites",
+    "depthTextTr": "Çok sığ ile sığ deniz",
+    "habitatTextTr": "Karadan gelen kırıntılı malzeme ile karbonatların birlikte çökeldiği geçişli kumlu kireçtaşı ve sığ denizel kıyı ortamı.",
+    "sourceLabel": "Proje ortam veri tablosu",
+    "taxonomicReviewRequired": true
+  },
+  {
+    "scientificName": "Bolkarina",
+    "rank": "GENUS",
+    "parentGenus": "Bolkarina",
+    "depthTextTr": "Çok sığ ile sığ deniz",
+    "habitatTextTr": "Kıyı ardı ve resif çevresindeki kısıtlı şelf, resif gerisi ve sakin algli kireçtaşı ortamları.",
+    "sourceLabel": "Proje ortam veri tablosu"
+  },
+  {
+    "scientificName": "Chapmanina",
+    "rank": "GENUS",
+    "parentGenus": "Chapmanina",
+    "depthTextTr": "Çok sığ ile sığ deniz",
+    "habitatTextTr": "İç rampa, resif gerisi veya önüyle bağlantılı sığ denizel kireçtaşı ve killi ya da kumlu kireçtaşı çökelleri.",
+    "sourceLabel": "Proje ortam veri tablosu"
+  },
+  {
+    "scientificName": "Elphidium",
+    "rank": "GENUS",
+    "parentGenus": "Elphidium",
+    "depthTextTr": "Çok sığ deniz",
+    "habitatTextTr": "Kıyı çizgisi, lagünler, haliçler, gelgit alanları ve kıta sahanlığı. Değişken tuzluluk ve hafif acı su koşullarına dayanıklıdır.",
+    "sourceLabel": "Proje ortam veri tablosu"
+  },
+  {
+    "scientificName": "Bolivinella",
+    "rank": "GENUS",
+    "parentGenus": "Bolivinella",
+    "depthTextTr": "Sığ deniz",
+    "habitatTextTr": "Kıyıya yakın korunaklı koylar, resif arkası, lagünler ve sığ şelf tabanındaki tortullar; genellikle ılık ve ılıman sığ deniz ortamları.",
+    "sourceLabel": "Proje ortam veri tablosu"
+  },
+  {
+    "scientificName": "Polymorphina",
+    "rank": "GENUS",
+    "parentGenus": "Polymorphina",
+    "depthTextTr": "Sığ ile orta derinlikteki şelf suları",
+    "habitatTextTr": "Normal tuzluluğa sahip denizel şelf ve kıyıya geçiş ortamlarındaki çamurlu ve kumlu tabanlarda serbest bentik yaşam.",
+    "sourceLabel": "Proje ortam veri tablosu"
+  },
+  {
+    "scientificName": "Glandulina",
+    "rank": "GENUS",
+    "parentGenus": "Glandulina",
+    "depthTextTr": "Orta şelften batyal zona kadar; yaklaşık 50 metreden 500–1000 metreye kadar",
+    "habitatTextTr": "Dış kıta sahanlığı, açık şelf ve üst kıta yamacı deniz tabanı ortamları.",
+    "sourceLabel": "Proje ortam veri tablosu"
+  },
+  {
+    "scientificName": "Bulimina",
+    "rank": "GENUS",
+    "parentGenus": "Bulimina",
+    "depthTextTr": "Orta şelften batyal zona kadar; tipik olarak 100–200 metreden 1000–2000+ metreye kadar",
+    "habitatTextTr": "Açık denizel dış şelf ve kıta yamacı çökelleri; organik maddece zengin, oksijeni düşük çamurlu tabanlara toleranslı infaunal yaşam.",
+    "sourceLabel": "Proje ortam veri tablosu"
+  },
+  {
+    "scientificName": "Nodosaria",
+    "rank": "GENUS",
+    "parentGenus": "Nodosaria",
+    "depthTextTr": "Genellikle 50–100 metreden batyal zon derinliklerine, 200–1000+ metreye kadar",
+    "habitatTextTr": "Orta-dış kıta sahanlığı, kıta yamacı ve açık havza; normal denizel tuzlulukta ince taneli sedimanlarda serbest bentik veya infaunal yaşam.",
+    "sourceLabel": "Proje ortam veri tablosu"
+  },
+  {
+    "scientificName": "Frondicularia",
+    "rank": "GENUS",
+    "parentGenus": "Frondicularia",
+    "depthTextTr": "Çoğunlukla 50–200 metre; bazı türlerde üst batyal zona, 200–400 metreye kadar",
+    "habitatTextTr": "Orta ve dış neritik şelf ile havza geçiş alanlarındaki killi kireçtaşı, şeyl ve marn çökelleri.",
+    "sourceLabel": "Proje ortam veri tablosu"
+  }
+]

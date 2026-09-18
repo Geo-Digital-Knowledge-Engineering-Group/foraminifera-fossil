@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "import": "node import_ontology.js"
+    "import": "node import_ontology.js",
+    "test": "node --test test/*.test.js"
   },
   "keywords": [],
   "author": "",

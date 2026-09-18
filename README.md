@@ -502,68 +502,6 @@ healthController.js
 
 ## Installation
 
-Clone the repository:
-
-```bash
-git clone https://github.com/datkanber/foraminifera-fossil.git
-```
-
-Open the project directory:
-
-```bash
-cd foraminifera-fossil
-```
-
-## Run the Frontend
-
-Open the client directory:
-
-```bash
-cd client
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm start
-```
-
-The frontend runs at:
-
-```text
-http://localhost:3000
-```
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Run the API
-
-Open a second terminal and enter the API directory:
-
-```bash
-cd api
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm run dev
 ```
 
 The API runs at:
