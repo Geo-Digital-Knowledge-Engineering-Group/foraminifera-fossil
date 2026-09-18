@@ -1,0 +1,290 @@
+.predict-container {
+  padding: 30px 40px !important;
+  background-color: #f8f9fa !important;
+  min-height: 85vh !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  color: #2c3e50 !important;
+}
+
+/* Üst Banner Alanı */
+.predict-header-banner {
+  background: linear-gradient(135deg, #f4f8f6 0%, #eaf2ec 100%) !important;
+  border: 1px solid #d8e5e0 !important;
+  border-radius: 8px !important;
+  padding: 24px 30px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-bottom: 25px !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02) !important;
+
+  }
+.banner-left {
+  max-width: 70% !important;
+}
+
+.banner-left .workspace-tag {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #8c9896 !important;
+  letter-spacing: 0.5px !important;
+  display: block !important;
+  margin-bottom: 6px !important;
+  text-transform: uppercase !important;
+}
+
+.banner-left h1 {
+  font-size: 22px !important;
+  margin: 0 0 6px 0 !important;
+  color: #1a2c24 !important;
+  font-weight: 700 !important;
+}
+
+.banner-left p {
+  font-size: 13px !important;
+  color: #64736f !important;
+  margin: 0 !important;
+}
+
+.banner-right-box {
+  background: #ffffff !important;
+  border: 1px solid #d8e5e0 !important;
+  padding: 14px 20px !important;
+  border-radius: 6px !important;
+  text-align: right !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.01) !important;
+}
+
+.proto-title {
+  display: block !important;
+  font-size: 10px !important;
+  color: #8c9896 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 3px !important;
+  font-weight: 600 !important;
+}
+
+.proto-val {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #2d453b !important;
+  display: block !important;
+}
+
+/* Grid Yapısı */
+.predict-grid {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+}
+
+.predict-card {
+  background: #ffffff !important;
+  border: 1px solid #e5ebe9 !important;
+  border-radius: 8px !important;
+  padding: 25px !important;
+  flex: 1 !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.01) !important;
+}
+
+.card-top-tag {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #8c9896 !important;
+  margin-bottom: 12px !important;
+  letter-spacing: 0.5px !important;
+}
+
+.side-badge {
+  background: #f0f4f2 !important;
+  padding: 3px 10px !important;
+  border-radius: 12px !important;
+  font-size: 11px !important;
+  color: #385247 !important;
+  font-weight: 600 !important;
+}
+
+.predict-card h2 {
+  font-size: 18px !important;
+  margin-bottom: 20px !important;
+  color: #1a2c24 !important;
+  font-weight: 700 !important;
+}
+
+/* Form Elemanları */
+.form-row {
+  display: flex !important;
+  gap: 15px !important;
+  margin-bottom: 14px !important;
+}
+
+.form-group {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.form-group.full-width {
+  margin-bottom: 14px !important;
+}
+
+.form-group label {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #435550 !important;
+  margin-bottom: 6px !important;
+}
+
+.form-group input {
+  width: 100% !important;
+  padding: 10px 12px !important;
+  border: 1px solid #dce4e1 !important;
+  border-radius: 6px !important;
+  font-size: 13px !important;
+  background: #fafbfb !important;
+  color: #2c3e50 !important;
+  outline: none !important;
+  box-sizing: border-box !important;
+}
+
+.form-group input:focus {
+  border-color: #385247 !important;
+  background: #ffffff !important;
+}
+
+.formula-row {
+  align-items: flex-end !important;
+  margin-top: 18px !important;
+}
+
+.formula-text p {
+  font-size: 11px !important;
+  color: #8c9896 !important;
+  margin: 0 !important;
+}
+
+.predict-btn {
+  background-color: #354f43 !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+}
+
+.predict-btn:hover {
+  background-color: #283d34 !important;
+}
+
+/* Ortadaki Ok */
+.result-arrow-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 5px !important;
+  min-width: 60px !important;
+  align-self: center !important;
+}
+
+.arrow-line {
+  font-size: 24px !important;
+  color: #385247 !important;
+  font-weight: bold !important;
+  line-height: 1 !important;
+  margin-bottom: 4px !important;
+}
+
+.arrow-text {
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  color: #385247 !important;
+  letter-spacing: 1px !important;
+}
+
+/* Sağ Çıktı (Output) Bölümleri */
+.result-main-box {
+  background: #fafbfb !important;
+  border: 1px solid #e5ebe9 !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+  margin-bottom: 15px !important;
+}
+
+.result-icon-title {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+.fossil-icon {
+  background: #354f43 !important;
+  color: white !important;
+  width: 36px !important;
+  height: 36px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 6px !important;
+  font-size: 16px !important;
+}
+
+.rec-label {
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  color: #8c9896 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.result-icon-title h3 {
+  font-size: 18px !important;
+  color: #1a2c24 !important;
+  margin: 0 !important;
+  font-weight: 700 !important;
+}
+
+.result-desc {
+  font-size: 12px !important;
+  color: #64736f !important;
+  line-height: 1.5 !important;
+  margin-bottom: 20px !important;
+}
+
+.result-metrics-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 10px !important;
+}
+
+.metric-item, .sub-box {
+  background: #ffffff !important;
+  border: 1px solid #e5ebe9 !important;
+  padding: 12px 14px !important;
+  border-radius: 6px !important;
+}
+
+.m-label {
+  display: block !important;
+  font-size: 11px !important;
+  color: #8c9896 !important;
+  margin-bottom: 3px !important;
+}
+
+.m-val {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #1a2c24 !important;
+}
+
+.result-sub-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 10px !important;
+}
